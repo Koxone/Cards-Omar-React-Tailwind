@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function CouponCard({ name, validUntil, promo, logo }) {
   return (

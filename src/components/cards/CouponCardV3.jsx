@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 function CouponCardV3({ name, valid, promo, categorie, details, logo }) {
+  const [bgColor, setBgColor] = useState("");
+  useEffect(() => {
+    const color = window.getComputedStyle(document.body).backgroundColor;
+    setBgColor(color);
+  });
   return (
-    <div className="relative flex min-h-[340px] w-[345px] flex-col justify-between rounded-2xl border border-neutral-700 bg-white px-8 py-6 shadow-lg">
+    <div className="relative flex min-h-[340px] w-[345px] flex-col shadow-2xl justify-between rounded-2xl border border-neutral-700 bg-white px-8 py-6 shadow-lg">
       {/* Parte superior (logo + texto) */}
       <div className="flex flex-grow flex-col items-center justify-start gap-3">
         <div className="flex h-[90px] items-center justify-center">
@@ -25,8 +30,14 @@ function CouponCardV3({ name, valid, promo, categorie, details, logo }) {
       {/* Línea y círculos */}
       <div className="relative mt-2 h-6 w-full">
         <div className="absolute inset-0 h-[1px] w-full bg-[linear-gradient(to_right,_#8a8888_4px,_transparent_4px)] bg-[length:8px_1px] bg-repeat-x" />
-        <div className="absolute top-0 left-[-19%] h-10 w-10 -translate-y-1/2 rounded-full bg-[#004466]" />
-        <div className="absolute top-0 right-[-19%] h-10 w-10 -translate-y-1/2 rounded-full bg-[#004466]" />
+        <div
+          style={{ backgroundColor: bgColor }}
+          className="absolute top-0 left-[-19%] h-10 w-10 -translate-y-1/2 rounded-full"
+        />
+        <div
+          style={{ backgroundColor: bgColor }}
+          className="absolute top-0 right-[-19%] h-10 w-10 -translate-y-1/2 rounded-full"
+        />
       </div>
 
       {/* Botón */}

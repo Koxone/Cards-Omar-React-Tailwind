@@ -2,9 +2,8 @@
 
 html,
 body {
-  /* height: 100%; */
   margin: 0;
-  background-color: #004466;
+  background-color: #fff;
 }
 
 body {
@@ -18,4 +17,13 @@ main {
   width: 100%;
   padding: 16px;
   box-sizing: border-box;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 15px;
 }
