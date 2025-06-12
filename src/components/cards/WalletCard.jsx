@@ -1,6 +1,6 @@
 import React from "react";
 
-function WalletCard({ promo = "", name = "", service = "" }) {
+function WalletCard({ promo, name, service }) {
   return (
     <div className="relative flex h-[530px] w-[342px] flex-col items-center gap-4 rounded-2xl border border-neutral-700 bg-white px-8 py-7 shadow-lg">
       <div className="flex w-full items-center justify-between gap-4">

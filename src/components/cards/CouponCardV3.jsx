@@ -1,6 +1,6 @@
 import React from "react";
 
-function CouponCardV3({ name, valid, discount, categorie, details, logo }) {
+function CouponCardV3({ name, valid, promo, categorie, details, logo }) {
   return (
     <div className="relative flex min-h-[340px] w-[345px] flex-col justify-between rounded-2xl border border-neutral-700 bg-white px-8 py-6 shadow-lg">
       {/* Parte superior (logo + texto) */}
@@ -14,7 +14,7 @@ function CouponCardV3({ name, valid, discount, categorie, details, logo }) {
         </div>
         <div className="text-center">
           <h2 className="text-3xl leading-tight font-bold tracking-widest break-words text-[#297da9] uppercase">
-            {discount}
+            {promo}
           </h2>
           <p className="font-medium tracking-wider text-[#297da9]">
             {categorie}

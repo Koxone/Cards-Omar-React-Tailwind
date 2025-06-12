@@ -12,17 +12,27 @@ function App() {
       {/* {data.map((item, index) => (
         <CouponCard
           key={index}
-          discount={item.promo}
+          promo={item.promo}
           logo={item.logo}
           name={item.name}
           validUntil={item.valid}
         />
       ))} */}
 
-      {data.map((item, index) => (
+      {/* {data.map((item, index) => (
         <CouponCardV3
           key={index}
-          discount={item.promo}
+          promo={item.promo}
+          logo={item.logo}
+          categorie={item.categorie}
+          validUntil={item.valid}
+        />
+      ))} */}
+
+      {data.map((item, index) => (
+        <WalletCard
+          key={index}
+          promo={item.promo}
           logo={item.logo}
           categorie={item.categorie}
           validUntil={item.valid}
