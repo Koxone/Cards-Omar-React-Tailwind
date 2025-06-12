@@ -33,7 +33,10 @@ function App() {
         <WalletCard
           key={index}
           promo={item.promo}
+          name={item.name}
           logo={item.logo}
+          service={item.service}
+          details={item.details}
           categorie={item.categorie}
           validUntil={item.valid}
         />

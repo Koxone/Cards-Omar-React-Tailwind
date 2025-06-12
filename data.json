@@ -3,6 +3,7 @@
     "name": "McDonald's",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
+    "service": "Delivery",
     "promo": "25% OFF",
     "details": [
       "Get 25% off your entire order.",
@@ -16,6 +17,7 @@
     "name": "Starbucks",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
+    "service": "Delivery",
     "promo": "1 Free Drink",
     "details": [
       "Enjoy one free drink of your choice.",
@@ -29,6 +31,7 @@
     "name": "KFC",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
+    "service": "Delivery",
     "promo": "20% OFF Family Buckets",
     "details": [
       "Save 20% on all Family Buckets.",
@@ -42,6 +45,7 @@
     "name": "Uber",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
+    "service": "Delivery",
     "promo": "10% OFF Your Ride",
     "details": [
       "Get 10% off your next ride.",
