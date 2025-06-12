@@ -1,0 +1,54 @@
+[
+  {
+    "name": "McDonald's",
+    "valid": "July 30 2026",
+    "categorie": "Fast Food",
+    "promo": "25% OFF",
+    "details": [
+      "Get 25% off your entire order.",
+      "Valid at participating McDonald's locations.",
+      "Valid until August 31, 2025.",
+      "Cannot be combined with other promotions."
+    ],
+    "logo": "/assets/mcdonalds.png"
+  },
+  {
+    "name": "Starbucks",
+    "valid": "July 30 2026",
+    "categorie": "Fast Food",
+    "promo": "1 Free Drink",
+    "details": [
+      "Enjoy one free drink of your choice.",
+      "Offer valid on purchases over $10.",
+      "Redeem at any U.S. Starbucks location.",
+      "Expires September 15, 2025."
+    ],
+    "logo": "/assets/starbucks.png"
+  },
+  {
+    "name": "KFC",
+    "valid": "July 30 2026",
+    "categorie": "Fast Food",
+    "promo": "20% OFF Family Buckets",
+    "details": [
+      "Save 20% on all Family Buckets.",
+      "Available for dine-in and takeout.",
+      "Valid until July 30, 2025.",
+      "Not valid with delivery apps."
+    ],
+    "logo": "/assets/kfc.png"
+  },
+  {
+    "name": "Uber",
+    "valid": "July 30 2026",
+    "categorie": "Fast Food",
+    "promo": "10% OFF Your Ride",
+    "details": [
+      "Get 10% off your next ride.",
+      "Valid only through the Uber app.",
+      "Code usable once per user.",
+      "Expires August 15, 2025."
+    ],
+    "logo": "/assets/uber.png"
+  }
+]

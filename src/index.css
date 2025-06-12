@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+html,
+body {
+  /* height: 100%; */
+  margin: 0;
+  background-color: #004466;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 1280px;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
