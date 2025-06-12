@@ -4,13 +4,11 @@ function WalletCard({ promo, name, service, logo, details }) {
   const [bgColor, setBgColor] = useState("");
 
   useEffect(() => {
-    // Tomamos el color de fondo del <body> para los “mordiscos” laterales
     setBgColor(window.getComputedStyle(document.body).backgroundColor);
   }, []);
 
   return (
     <div className="relative flex h-[530px] w-[342px] flex-col rounded-2xl border border-neutral-700 bg-white px-8 py-7 shadow-lg">
-      {/* BLOQUE SUPERIOR – crece o se encoge, mantiene el fondo alineado */}
       <div className="flex w-full flex-1 flex-col items-center gap-4">
         {/* Header */}
         <div className="flex w-full items-center justify-between gap-4">
@@ -20,13 +18,11 @@ function WalletCard({ promo, name, service, logo, details }) {
           </h1>
         </div>
 
-        {/* Descripción  */}
+        {/* Description  */}
         <div className="flex w-full flex-col gap-4">
           <h2 className="text-center text-base font-bold text-[#297da9]">
             {`Get ${promo} off at your next ${name} ${service}`}
           </h2>
-
-          {/* La lista se adapta al ancho disponible sin alterar el layout */}
           <ul className="flex list-inside list-disc flex-col gap-3 text-sm font-medium text-neutral-500">
             {Array.isArray(details) &&
               details.map((line, idx) => <li key={idx}>{line}</li>)}
