@@ -9,7 +9,7 @@ function CouponContainer() {
     <div className="flex flex-col items-center justify-center gap-4 p-4">
       <div className="flex flex-wrap items-center gap-4 p-4">
         {data.map((item, index) => (
-          <WalletCard
+          <CouponCardV3
             key={index}
             promo={item.promo}
             name={item.name}

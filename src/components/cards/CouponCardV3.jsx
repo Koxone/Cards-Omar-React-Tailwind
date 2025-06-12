@@ -7,7 +7,7 @@ function CouponCardV3({ name, valid, promo, categorie, details, logo }) {
     setBgColor(color);
   });
   return (
-    <div className="relative flex min-h-[340px] w-[345px] flex-col justify-between rounded-2xl border border-neutral-700 bg-white px-8 py-6 shadow-lg">
+    <div className="relative flex h-[353px] w-[345px] flex-col justify-between rounded-2xl border border-neutral-700 bg-white px-8 py-6 shadow-lg">
       {/* Parte superior (logo + texto) */}
       <div className="flex flex-grow flex-col items-center justify-start gap-3">
         <div className="flex h-[90px] items-center justify-center">
