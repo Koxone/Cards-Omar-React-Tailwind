@@ -46,6 +46,9 @@ function WalletCard({ promo, name, service, logo, details }) {
           alt="external link"
           className="h-6 w-6 object-contain cursor-pointer"
         />
+        <a href="#">
+          
+        </a>
         <img
           src="/assets/info.png"
           alt="info icon"
