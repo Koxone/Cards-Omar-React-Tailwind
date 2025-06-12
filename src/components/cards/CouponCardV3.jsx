@@ -1,29 +1,37 @@
 import React from "react";
 
-function CouponCardV3() {
+function CouponCardV3({ name, valid, discount, categorie, details, logo }) {
   return (
-    <div className="relative flex h-[289px] w-[345px] flex-col items-center gap-4 rounded-2xl border border-neutral-700 bg-white px-8 py-7 shadow-lg">
-      <input
-        type="checkbox"
-        name="coupon"
-        className="absolute top-4 right-4 h-5 w-5"
-      />
-      <div className="flex w-full items-center justify-center gap-4">
-        <img className="w-[90px]" src="/assets/kfc.png" alt="Brand Logo" />
+    <div className="relative flex min-h-[340px] w-[345px] flex-col justify-between rounded-2xl border border-neutral-700 bg-white px-8 py-6 shadow-lg">
+      {/* Parte superior (logo + texto) */}
+      <div className="flex flex-grow flex-col items-center justify-start gap-3">
+        <div className="flex h-[90px] items-center justify-center">
+          <img
+            className="h-[90px] w-[90px] object-contain"
+            src={logo}
+            alt="Brand Logo"
+          />
+        </div>
+        <div className="text-center">
+          <h2 className="text-3xl leading-tight font-bold tracking-widest break-words text-[#297da9] uppercase">
+            {discount}
+          </h2>
+          <p className="font-medium tracking-wider text-[#297da9]">
+            {categorie}
+          </p>
+        </div>
       </div>
-      <div className="flex flex-col">
-        <h2 className="text-center text-3xl font-bold tracking-widest text-[#297da9] uppercase">
-          25% off
-        </h2>
-        <p className="text-center font-medium tracking-wider text-[#297da9]">
-          Park
-        </p>
+
+      {/* Línea y círculos */}
+      <div className="relative mt-2 h-6 w-full">
+        <div className="absolute inset-0 h-[1px] w-full bg-[linear-gradient(to_right,_#8a8888_4px,_transparent_4px)] bg-[length:8px_1px] bg-repeat-x" />
+        <div className="absolute top-0 left-[-19%] h-10 w-10 -translate-y-1/2 rounded-full bg-[#004466]" />
+        <div className="absolute top-0 right-[-19%] h-10 w-10 -translate-y-1/2 rounded-full bg-[#004466]" />
       </div>
-      <div className="mt-4 mb-4 h-[1px] w-full bg-[linear-gradient(to_right,_#8a8888_4px,_transparent_4px)] bg-[length:8px_1px] bg-repeat-x" />
-      <div className="absolute top-[52%] left-[-6%] h-10 w-10 rounded-full bg-[#004466]" />
-      <div className="absolute top-[52%] right-[-6%] h-10 w-10 rounded-full bg-[#004466]" />
-      <div className="flex w-full cursor-pointer items-center justify-center">
-        <button className="flex cursor-pointer items-center justify-center rounded-[42px] border bg-[#297da9] px-12 py-4 text-base font-semibold text-white transition-colors duration-300 hover:bg-[#004165] hover:text-white active:bg-[#004165]">
+
+      {/* Botón */}
+      <div className="flex w-full items-center justify-center pt-3">
+        <button className="cursor-pointer rounded-[42px] border bg-[#297da9] px-12 py-4 text-base font-semibold text-white transition-colors duration-300 hover:bg-[#004165] active:bg-[#004165]">
           View Details
         </button>
       </div>
