@@ -7,15 +7,20 @@ import data from "/data";
 function CouponContainer() {
   return (
     <div className="flex flex-col items-center justify-center gap-4 p-4">
-      {data.map((item, index) => (
-        <WalletCard
-          key={index}
-          name={item.name}
-          validUntil={item.validUntil}
-          promo={item.promo}
-          logo={item.logo}
-        />
-      ))}
+      <div className="flex flex-wrap items-center gap-4 p-4">
+        {data.map((item, index) => (
+          <WalletCard
+            key={index}
+            promo={item.promo}
+            name={item.name}
+            logo={item.logo}
+            service={item.service}
+            details={item.details}
+            categorie={item.categorie}
+            validUntil={item.valid}
+          />
+        ))}
+      </div>
     </div>
   );
 }
