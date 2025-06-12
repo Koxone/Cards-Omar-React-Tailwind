@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import data from "/data";
 
 function WalletCard({ promo, name, service, logo, details }) {
+  const [bgColor, setBgColor] = useState("");
+  useEffect(() => {
+    const color = window.getComputedStyle(document.body).backgroundColor;
+    setBgColor(color);
+  });
   return (
     <div className="relative flex min-h-[530px] w-[342px] flex-col items-center gap-4 rounded-2xl border border-neutral-700 bg-white px-8 py-7 shadow-lg">
       {/* Header */}
@@ -26,8 +31,14 @@ function WalletCard({ promo, name, service, logo, details }) {
       {/* Divider */}
       <div className="relative mt-2 h-6 w-full">
         <div className="absolute inset-0 h-[1px] w-full bg-[linear-gradient(to_right,_#8a8888_4px,_transparent_4px)] bg-[length:8px_1px] bg-repeat-x" />
-        <div className="absolute top-0 left-[-19%] h-10 w-10 -translate-y-1/2 rounded-full bg-[#004466]" />
-        <div className="absolute top-0 right-[-19%] h-10 w-10 -translate-y-1/2 rounded-full bg-[#004466]" />
+        <div
+          style={{ backgroundColor: bgColor }}
+          className="absolute top-0 left-[-19%] h-10 w-10 -translate-y-1/2 rounded-full border-r border-neutral-700"
+        />
+        <div
+          style={{ backgroundColor: bgColor }}
+          className="absolute top-0 right-[-19%] h-10 w-10 -translate-y-1/2 rounded-full border-l border-neutral-700"
+        />
       </div>
 
       {/* QR */}
@@ -44,15 +55,13 @@ function WalletCard({ promo, name, service, logo, details }) {
         <img
           src="/assets/external-link.png"
           alt="external link"
-          className="h-6 w-6 object-contain cursor-pointer"
+          className="h-6 w-6 cursor-pointer object-contain"
         />
-        <a href="#">
-          
-        </a>
+        <a href="#"></a>
         <img
           src="/assets/info.png"
           alt="info icon"
-          className="h-6 w-6 object-contain cursor-pointer"
+          className="h-6 w-6 cursor-pointer object-contain"
         />
       </div>
     </div>

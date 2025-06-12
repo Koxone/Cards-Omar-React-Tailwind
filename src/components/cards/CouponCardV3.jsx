@@ -7,7 +7,7 @@ function CouponCardV3({ name, valid, promo, categorie, details, logo }) {
     setBgColor(color);
   });
   return (
-    <div className="relative flex min-h-[340px] w-[345px] flex-col shadow-2xl justify-between rounded-2xl border border-neutral-700 bg-white px-8 py-6 shadow-lg">
+    <div className="relative flex min-h-[340px] w-[345px] flex-col justify-between rounded-2xl border border-neutral-700 bg-white px-8 py-6 shadow-lg">
       {/* Parte superior (logo + texto) */}
       <div className="flex flex-grow flex-col items-center justify-start gap-3">
         <div className="flex h-[90px] items-center justify-center">
@@ -32,11 +32,11 @@ function CouponCardV3({ name, valid, promo, categorie, details, logo }) {
         <div className="absolute inset-0 h-[1px] w-full bg-[linear-gradient(to_right,_#8a8888_4px,_transparent_4px)] bg-[length:8px_1px] bg-repeat-x" />
         <div
           style={{ backgroundColor: bgColor }}
-          className="absolute top-0 left-[-19%] h-10 w-10 -translate-y-1/2 rounded-full"
+          className="absolute top-0 left-[-19%] h-10 w-10 -translate-y-1/2 rounded-full border-r border-neutral-700"
         />
         <div
           style={{ backgroundColor: bgColor }}
-          className="absolute top-0 right-[-19%] h-10 w-10 -translate-y-1/2 rounded-full"
+          className="absolute top-0 right-[-19%] h-10 w-10 -translate-y-1/2 rounded-full border-l border-neutral-700"
         />
       </div>
 
