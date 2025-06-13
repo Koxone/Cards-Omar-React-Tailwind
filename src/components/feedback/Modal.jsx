@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Login from "./Login";
 
 function Modal({
   logo,
@@ -8,8 +9,10 @@ function Modal({
   validUntil,
   onClose,
   visible,
+  onApply,
 }) {
   const [bgColor, setBgColor] = useState("");
+  const [isApplying, setIsApplying] = useState(false);
 
   useEffect(() => {
     const color = window.getComputedStyle(document.body).backgroundColor;
@@ -45,7 +48,7 @@ function Modal({
         </div>
 
         {/* Title, Categorie and Logo */}
-        <div className="flex items-center justify-between pt-4 h-[121px]">
+        <div className="flex h-[121px] items-center justify-between pt-4">
           <div className="flex flex-col gap-2">
             <p className="text-2xl leading-7 font-semibold tracking-wide text-[#024466]">
               {name}
@@ -57,7 +60,7 @@ function Modal({
 
         {/* Description and Apply Button */}
         <div className="flex h-full flex-col">
-          <div className="flex-grow flex flex-col gap-4">
+          <div className="flex flex-grow flex-col gap-4">
             <p className="text-2xl font-semibold tracking-wider">Description</p>
             <p className="text-base leading-9 font-medium tracking-wide text-neutral-500">
               {description}
@@ -69,7 +72,13 @@ function Modal({
           >
             Terms & Conditions
           </a>
-          <button className="mt-4 flex cursor-pointer items-center justify-center rounded-[42px] border bg-[#297da9] px-12 py-4 text-base font-semibold text-white transition-colors duration-300 hover:bg-[#004165] active:bg-[#004165]">
+          <button
+            onClick={() => {
+              setIsApplying(true);
+              onApply();
+            }}
+            className="mt-4 flex cursor-pointer items-center justify-center rounded-[42px] border bg-[#297da9] px-12 py-4 text-base font-semibold text-white transition-colors duration-300 hover:bg-[#004165] active:bg-[#004165]"
+          >
             Apply Coupon
           </button>
         </div>
