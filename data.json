@@ -1,6 +1,7 @@
 [
   {
     "name": "McDonald's",
+    "region": "cancun",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -16,6 +17,7 @@
   },
   {
     "name": "Starbucks",
+    "region": "cancun",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -31,6 +33,7 @@
   },
   {
     "name": "KFC",
+    "region": "cancun",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -46,6 +49,7 @@
   },
   {
     "name": "Uber",
+    "region": "cancun",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -61,6 +65,7 @@
   },
   {
     "name": "Domino's",
+    "region": "cancun",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -76,6 +81,7 @@
   },
   {
     "name": "Subway",
+    "region": "cancun",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -91,6 +97,7 @@
   },
   {
     "name": "Pizza Hut",
+    "region": "cancun",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -106,6 +113,7 @@
   },
   {
     "name": "Taco Bell",
+    "region": "cancun",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -121,6 +129,7 @@
   },
   {
     "name": "Wendy's",
+    "region": "cancun",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -136,6 +145,7 @@
   },
   {
     "name": "Chick-fil-A",
+    "region": "cancun",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -151,6 +161,7 @@
   },
   {
     "name": "Dunkin'",
+    "region": "cancun",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -166,6 +177,7 @@
   },
   {
     "name": "Panera Bread",
+    "region": "cancun",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
