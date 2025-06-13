@@ -10,6 +10,7 @@ function Modal({
   onClose,
   visible,
   onApply,
+  isLoggedIn,
 }) {
   const [bgColor, setBgColor] = useState("");
   const [isApplying, setIsApplying] = useState(false);
@@ -62,9 +63,11 @@ function Modal({
         <div className="flex h-full flex-col">
           <div className="mb-auto flex flex-col gap-4">
             <p className="text-2xl font-semibold tracking-wider">Description</p>
-            <p className="text-base leading-9 font-medium tracking-wide text-neutral-500">
-              {description}
-            </p>
+            <div>
+              <p className="text-base leading-9 font-medium tracking-wide text-neutral-500">
+                {description}
+              </p>
+            </div>
           </div>
           <div className="flex flex-col items-center gap-4">
             <a
@@ -76,26 +79,39 @@ function Modal({
             <div className="flex w-full items-center justify-evenly px-4 pt-2">
               <button
                 onClick={() => {
-                  setIsApplying(true);
-                  onApply();
+                  if (isLoggedIn) {
+                    // Wallet Logic
+                    console.log("Agregar a Apple Wallet");
+                  } else {
+                    setIsApplying(true);
+                    onApply();
+                  }
                 }}
               >
                 <img
+                  id="apple"
                   className="h-[50px] w-[160px] cursor-pointer"
                   src="/assets/apple.png"
-                  alt=""
+                  alt="Apple Wallet"
                 />
               </button>
+
               <button
+                id="google"
                 onClick={() => {
-                  setIsApplying(true);
-                  onApply();
+                  if (isLoggedIn) {
+                    // Wallet Logic
+                    console.log("Agregar a Google Wallet");
+                  } else {
+                    setIsApplying(true);
+                    onApply();
+                  }
                 }}
               >
                 <img
                   className="h-[50px] w-[160px] cursor-pointer"
                   src="/assets/google.png"
-                  alt=""
+                  alt="Google Wallet"
                 />
               </button>
             </div>

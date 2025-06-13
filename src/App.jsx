@@ -38,6 +38,7 @@ function App() {
           validUntil={selectedItem.valid}
           description={selectedItem.description}
           onApply={handleApplyCoupon}
+          isLoggedIn={isLoggedIn}
         />
       )}
       {showLogin && (
