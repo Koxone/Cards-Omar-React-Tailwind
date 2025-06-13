@@ -54,5 +54,117 @@
       "Expires August 15, 2025."
     ],
     "logo": "/assets/uber.png"
+  },
+  {
+    "name": "Domino's",
+    "valid": "July 30 2026",
+    "categorie": "Fast Food",
+    "service": "Delivery",
+    "promo": "Buy One Get One Free Pizza",
+    "details": [
+      "Buy one pizza, get another free.",
+      "Valid on pizzas of equal or lesser value.",
+      "Offer valid for online orders only.",
+      "Expires September 30, 2025."
+    ],
+    "logo": "/assets/dominos.png"
+  },
+  {
+    "name": "Subway",
+    "valid": "July 30 2026",
+    "categorie": "Fast Food",
+    "service": "Delivery",
+    "promo": "Free Footlong with Purchase",
+    "details": [
+      "Get a free footlong sandwich with any purchase.",
+      "Valid at participating Subway locations.",
+      "Offer valid until October 31, 2025.",
+      "Cannot be combined with other offers."
+    ],
+    "logo": "/assets/subway.png"
+  },
+  {
+    "name": "Pizza Hut",
+    "valid": "July 30 2026",
+    "categorie": "Fast Food",
+    "service": "Delivery",
+    "promo": "Free Breadsticks",
+    "details": [
+      "Receive free breadsticks with any pizza order.",
+      "Valid for dine-in and takeout only.",
+      "Offer expires August 31, 2025.",
+      "Not valid with other promotions."
+    ],
+    "logo": "/assets/pizzahut.png"
+  },
+  {
+    "name": "Taco Bell",
+    "valid": "July 30 2026",
+    "categorie": "Fast Food",
+    "service": "Delivery",
+    "promo": "Free Taco",
+    "details": [
+      "Get a free taco with any purchase.",
+      "Valid at participating Taco Bell locations.",
+      "Offer valid until September 30, 2025.",
+      "Cannot be combined with other offers."
+    ],
+    "logo": "/assets/tacobell.png"
+  },
+  {
+    "name": "Wendy's",
+    "valid": "July 30 2026",
+    "categorie": "Fast Food",
+    "service": "Delivery",
+    "promo": "Free Frosty",
+    "details": [
+      "Enjoy a free Frosty with any order.",
+      "Valid at participating Wendy's locations.",
+      "Offer valid until October 15, 2025.",
+      "Cannot be combined with other promotions."
+    ],
+    "logo": "/assets/wendys.png"
+  },
+  {
+    "name": "Chick-fil-A",
+    "valid": "July 30 2026",
+    "categorie": "Fast Food",
+    "service": "Delivery",
+    "promo": "Free Chicken Sandwich",
+    "details": [
+      "Get a free chicken sandwich with any order.",
+      "Valid at participating Chick-fil-A locations.",
+      "Offer valid until November 30, 2025.",
+      "Cannot be combined with other offers."
+    ],
+    "logo": "/assets/chickfila.png"
+  },
+  {
+    "name": "Dunkin'",
+    "valid": "July 30 2026",
+    "categorie": "Fast Food",
+    "service": "Delivery",
+    "promo": "Free Donut",
+    "details": [
+      "Enjoy a free donut with any beverage purchase.",
+      "Valid at participating Dunkin' locations.",
+      "Offer valid until December 31, 2025.",
+      "Cannot be combined with other promotions."
+    ],
+    "logo": "/assets/dunkin.png"
+  },
+  {
+    "name": "Panera Bread",
+    "valid": "July 30 2026",
+    "categorie": "Fast Food",
+    "service": "Delivery",
+    "promo": "Free Pastry",
+    "details": [
+      "Get a free pastry with any order.",
+      "Valid at participating Panera Bread locations.",
+      "Offer valid until January 31, 2026.",
+      "Cannot be combined with other offers."
+    ],
+    "logo": "/assets/panerabread.png"
   }
 ]

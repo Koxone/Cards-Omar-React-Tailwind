@@ -1,31 +1,33 @@
 import React, { useEffect, useState } from "react";
-import data from "/data";
 
 function WalletCard({ promo, name, service, logo, details }) {
   const [bgColor, setBgColor] = useState("");
-  useEffect(() => {
-    const color = window.getComputedStyle(document.body).backgroundColor;
-    setBgColor(color);
-  });
-  return (
-    <div className="relative flex min-h-[530px] w-[342px] flex-col items-center gap-4 rounded-2xl border border-neutral-700 bg-white px-8 py-7 shadow-lg">
-      {/* Header */}
-      <div className="flex w-full items-center justify-between gap-4">
-        <img className="w-[90px]" src={logo} alt="brand logo" />
-        <h1 className="w-24 text-2xl font-semibold text-[#297da9] uppercase">
-          {`${promo} off`}
-        </h1>
-      </div>
 
-      {/* Description */}
-      <div className="flex flex-col gap-4">
-        <h2 className="text-center text-base font-bold text-[#297da9]">
-          {`Get ${promo} off at your next ${name} ${service}`}
-        </h2>
-        <ul className="flex w-[249px] list-inside list-disc flex-col gap-3 text-sm font-medium text-neutral-500">
-          {Array.isArray(details) &&
-            details.map((line, index) => <li key={index}>{line}</li>)}
-        </ul>
+  useEffect(() => {
+    setBgColor(window.getComputedStyle(document.body).backgroundColor);
+  }, []);
+
+  return (
+    <div className="relative flex h-[530px] w-[342px] flex-col rounded-2xl border border-neutral-700 bg-white px-8 py-7 shadow-lg">
+      <div className="flex w-full flex-1 flex-col items-center gap-4">
+        {/* Header */}
+        <div className="flex w-full items-center justify-between gap-4">
+          <img className="w-[90px]" src={logo} alt="brand logo" />
+          <h1 className="w-24 text-2xl font-semibold text-[#297da9] uppercase">
+            {`${promo} off`}
+          </h1>
+        </div>
+
+        {/* Description  */}
+        <div className="flex w-full flex-col gap-4">
+          <h2 className="text-center text-base font-bold text-[#297da9]">
+            {`Get ${promo} off at your next ${name} ${service}`}
+          </h2>
+          <ul className="flex list-inside list-disc flex-col gap-3 text-sm font-medium text-neutral-500">
+            {Array.isArray(details) &&
+              details.map((line, idx) => <li key={idx}>{line}</li>)}
+          </ul>
+        </div>
       </div>
 
       {/* Divider */}
@@ -42,7 +44,7 @@ function WalletCard({ promo, name, service, logo, details }) {
       </div>
 
       {/* QR */}
-      <div className="pt-2">
+      <div className="flex justify-center pt-2">
         <img
           src="/assets/qr_img 1.png"
           alt="qr code icon"
@@ -57,7 +59,6 @@ function WalletCard({ promo, name, service, logo, details }) {
           alt="external link"
           className="h-6 w-6 cursor-pointer object-contain"
         />
-        <a href="#"></a>
         <img
           src="/assets/info.png"
           alt="info icon"
