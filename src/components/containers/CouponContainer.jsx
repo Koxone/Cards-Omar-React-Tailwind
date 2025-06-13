@@ -1,7 +1,6 @@
 import React from "react";
 import CouponCard from "../cards/CouponCard";
 import CouponCardV3 from "../cards/CouponCardV3";
-import WalletCard from "../cards/WalletCard";
 import PromotionsBanner from "../cards/PromotionsBanner";
 import RegionSelector from "../inputs/RegionSelector";
 import data from "/data";
