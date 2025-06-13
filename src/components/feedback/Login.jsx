@@ -6,7 +6,8 @@ function Login({ onClose, visible }) {
   const [email, setEmail] = useState("");
   const [reservationCode, setReservationCode] = useState("");
 
-  const { checkReservation, reservation, loading, error } = UserReservationChecker();
+  const { checkReservation, reservation, loading, error } =
+    UserReservationChecker();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -25,13 +26,11 @@ function Login({ onClose, visible }) {
 
       if (data && data.status === "CONFIRMED") {
         setIsLoggedIn(true);
-        console.log("✅ Reserva confirmada:", data);
         onClose();
       } else {
         alert("Reservation not found or not confirmed.");
       }
     } catch (err) {
-      console.error("❌ Error al verificar:", err);
       alert("There was a problem verifying your reservation.");
     }
   };
@@ -68,7 +67,9 @@ function Login({ onClose, visible }) {
         </div>
 
         <div className="flex w-full flex-col gap-4">
-          <p className="text-lg font-semibold tracking-wide">Reservation Code</p>
+          <p className="text-lg font-semibold tracking-wide">
+            Reservation Code
+          </p>
           <input
             id="reservationCode"
             value={reservationCode}
