@@ -1,12 +1,12 @@
-import React from 'react'
-import CouponContainer from '../components/containers/CouponContainer'
+import CouponContainer from "../components/containers/CouponContainer";
+import data from "/data";
 
-function Landing() {
+function Landing({ onClick }) {
   return (
-    <div>
-      <CouponContainer />
+    <div className="">
+      <CouponContainer onClick={onClick} />
     </div>
-  )
+  );
 }
 
-export default Landing
+export default Landing;

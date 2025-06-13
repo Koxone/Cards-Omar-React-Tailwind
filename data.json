@@ -1,11 +1,13 @@
 [
   {
     "name": "McDonald's",
+    "region": "cancun",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
     "service": "Delivery",
     "promo": "25% OFF",
-    "details": [
+    "conditions": [
       "Get 25% off your entire order.",
       "Valid at participating McDonald's locations.",
       "Valid until August 31, 2025.",
@@ -15,11 +17,13 @@
   },
   {
     "name": "Starbucks",
+    "region": "cancun",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
     "service": "Delivery",
     "promo": "1 Free Drink",
-    "details": [
+    "conditions": [
       "Enjoy one free drink of your choice.",
       "Offer valid on purchases over $10.",
       "Redeem at any U.S. Starbucks location.",
@@ -29,11 +33,13 @@
   },
   {
     "name": "KFC",
+    "region": "cancun",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
     "service": "Delivery",
     "promo": "20% OFF Family Buckets",
-    "details": [
+    "conditions": [
       "Save 20% on all Family Buckets.",
       "Available for dine-in and takeout.",
       "Valid until July 30, 2025.",
@@ -43,11 +49,13 @@
   },
   {
     "name": "Uber",
+    "region": "cancun",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
     "service": "Delivery",
     "promo": "10% OFF Your Ride",
-    "details": [
+    "conditions": [
       "Get 10% off your next ride.",
       "Valid only through the Uber app.",
       "Code usable once per user.",
@@ -57,11 +65,13 @@
   },
   {
     "name": "Domino's",
+    "region": "cancun",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
     "service": "Delivery",
-    "promo": "Buy One Get One Free Pizza",
-    "details": [
+    "promo": "2x1 Pizza Deal",
+    "conditions": [
       "Buy one pizza, get another free.",
       "Valid on pizzas of equal or lesser value.",
       "Offer valid for online orders only.",
@@ -71,11 +81,13 @@
   },
   {
     "name": "Subway",
+    "region": "cancun",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
     "service": "Delivery",
-    "promo": "Free Footlong with Purchase",
-    "details": [
+    "promo": "2x1 on Footlong",
+    "conditions": [
       "Get a free footlong sandwich with any purchase.",
       "Valid at participating Subway locations.",
       "Offer valid until October 31, 2025.",
@@ -85,11 +97,13 @@
   },
   {
     "name": "Pizza Hut",
+    "region": "cancun",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
     "service": "Delivery",
     "promo": "Free Breadsticks",
-    "details": [
+    "conditions": [
       "Receive free breadsticks with any pizza order.",
       "Valid for dine-in and takeout only.",
       "Offer expires August 31, 2025.",
@@ -99,11 +113,13 @@
   },
   {
     "name": "Taco Bell",
+    "region": "cancun",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
     "service": "Delivery",
     "promo": "Free Taco",
-    "details": [
+    "conditions": [
       "Get a free taco with any purchase.",
       "Valid at participating Taco Bell locations.",
       "Offer valid until September 30, 2025.",
@@ -113,11 +129,13 @@
   },
   {
     "name": "Wendy's",
+    "region": "cancun",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
     "service": "Delivery",
     "promo": "Free Frosty",
-    "details": [
+    "conditions": [
       "Enjoy a free Frosty with any order.",
       "Valid at participating Wendy's locations.",
       "Offer valid until October 15, 2025.",
@@ -127,11 +145,13 @@
   },
   {
     "name": "Chick-fil-A",
+    "region": "cancun",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
     "service": "Delivery",
     "promo": "Free Chicken Sandwich",
-    "details": [
+    "conditions": [
       "Get a free chicken sandwich with any order.",
       "Valid at participating Chick-fil-A locations.",
       "Offer valid until November 30, 2025.",
@@ -141,11 +161,13 @@
   },
   {
     "name": "Dunkin'",
+    "region": "cancun",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
     "service": "Delivery",
     "promo": "Free Donut",
-    "details": [
+    "conditions": [
       "Enjoy a free donut with any beverage purchase.",
       "Valid at participating Dunkin' locations.",
       "Offer valid until December 31, 2025.",
@@ -155,11 +177,13 @@
   },
   {
     "name": "Panera Bread",
+    "region": "cancun",
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
     "service": "Delivery",
     "promo": "Free Pastry",
-    "details": [
+    "conditions": [
       "Get a free pastry with any order.",
       "Valid at participating Panera Bread locations.",
       "Offer valid until January 31, 2026.",
