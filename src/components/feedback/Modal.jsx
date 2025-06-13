@@ -60,27 +60,46 @@ function Modal({
 
         {/* Description and Apply Button */}
         <div className="flex h-full flex-col">
-          <div className="flex flex-grow flex-col gap-4">
+          <div className="mb-auto flex flex-col gap-4">
             <p className="text-2xl font-semibold tracking-wider">Description</p>
             <p className="text-base leading-9 font-medium tracking-wide text-neutral-500">
               {description}
             </p>
           </div>
-          <a
-            className="text-sm font-medium text-[#297da9] underline underline-offset-2 transition-colors duration-200 hover:text-[#004165]"
-            href="#"
-          >
-            Terms & Conditions
-          </a>
-          <button
-            onClick={() => {
-              setIsApplying(true);
-              onApply();
-            }}
-            className="mt-4 flex cursor-pointer items-center justify-center rounded-[42px] border bg-[#297da9] px-12 py-4 text-base font-semibold text-white transition-colors duration-300 hover:bg-[#004165] active:bg-[#004165]"
-          >
-            Apply Coupon
-          </button>
+          <div className="flex flex-col items-center gap-4">
+            <a
+              className="text-sm font-medium text-[#297da9] underline underline-offset-2 transition-colors duration-200 hover:text-[#004165]"
+              href="#"
+            >
+              Terms & Conditions
+            </a>
+            <div className="flex w-full items-center justify-evenly px-4 pt-2">
+              <button
+                onClick={() => {
+                  setIsApplying(true);
+                  onApply();
+                }}
+              >
+                <img
+                  className="h-[50px] w-[160px] cursor-pointer"
+                  src="/assets/apple.png"
+                  alt=""
+                />
+              </button>
+              <button
+                onClick={() => {
+                  setIsApplying(true);
+                  onApply();
+                }}
+              >
+                <img
+                  className="h-[50px] w-[160px] cursor-pointer"
+                  src="/assets/google.png"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
