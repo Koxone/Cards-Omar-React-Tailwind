@@ -8,6 +8,8 @@ import Login from "./components/feedback/Login";
 function App() {
   const [showModal, setShowModal] = useState(false);
 
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   const [showLogin, setShowLogin] = useState(false);
 
   const [selectedItem, setSelectedItem] = useState(null);
@@ -39,8 +41,12 @@ function App() {
         />
       )}
       {showLogin && (
-        <Login visible={true} onClose={() => setShowLogin(false)} />
-      )}{" "}
+        <Login
+          visible={true}
+          onClose={() => setShowLogin(false)}
+          onLoginSuccess={() => setIsLoggedIn(true)}
+        />
+      )}
       <div className="container">
         <Landing onClick={handleClick} />
       </div>

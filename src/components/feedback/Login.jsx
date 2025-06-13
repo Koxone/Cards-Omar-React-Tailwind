@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { UserReservationChecker } from "../../logic/UserReservationChecker";
 
-function Login({ onClose, visible }) {
+function Login({ onClose, visible, onLoginSuccess }) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [email, setEmail] = useState("");
   const [reservationCode, setReservationCode] = useState("");
@@ -25,7 +25,7 @@ function Login({ onClose, visible }) {
       });
 
       if (data && data.status === "CONFIRMED") {
-        setIsLoggedIn(true);
+        onLoginSuccess();
         onClose();
       } else {
         alert("Reservation not found or not confirmed.");
