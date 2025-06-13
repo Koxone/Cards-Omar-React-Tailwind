@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from "react";
 
-function CouponCardV3({ name, valid, promo, categorie, details, logo }) {
+function CouponCardV3({
+  name,
+  valid,
+  promo,
+  categorie,
+  conditions,
+  description,
+  logo,
+  onClick,
+}) {
   const [bgColor, setBgColor] = useState("");
   useEffect(() => {
     const color = window.getComputedStyle(document.body).backgroundColor;
@@ -42,7 +51,12 @@ function CouponCardV3({ name, valid, promo, categorie, details, logo }) {
 
       {/* Button */}
       <div className="flex w-full items-center justify-center pt-3">
-        <button className="cursor-pointer rounded-[42px] border bg-[#297da9] px-12 py-4 text-base font-semibold text-white transition-colors duration-300 hover:bg-[#004165] active:bg-[#004165]">
+        <button
+          onClick={() =>
+            onClick({ promo, name, logo, conditions, categorie, valid, description })
+          }
+          className="cursor-pointer rounded-[42px] border bg-[#297da9] px-12 py-4 text-base font-semibold text-white transition-colors duration-300 hover:bg-[#004165] active:bg-[#004165]"
+        >
           View Details
         </button>
       </div>

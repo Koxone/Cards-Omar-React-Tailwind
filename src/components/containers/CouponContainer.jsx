@@ -6,10 +6,10 @@ import PromotionsBanner from "../cards/PromotionsBanner";
 import RegionSelector from "../inputs/RegionSelector";
 import data from "/data";
 
-function CouponContainer() {
+function CouponContainer({ onClick }) {
   return (
     <div className="flex flex-col items-center justify-center gap-4 p-4">
-      <div className="flex items-center justify-between w-full gap-10">
+      <div className="flex w-full items-center justify-between gap-10">
         <PromotionsBanner />
         <RegionSelector />
       </div>
@@ -22,9 +22,11 @@ function CouponContainer() {
             name={item.name}
             logo={item.logo}
             service={item.service}
-            details={item.details}
+            conditions={item.conditions}
             categorie={item.categorie}
             validUntil={item.valid}
+            onClick={onClick}
+            description={item.description}
           />
         ))}
       </div>

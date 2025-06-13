@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function WalletCard({ promo, name, service, logo, details }) {
+function WalletCard({ promo, name, service, logo, conditions }) {
   const [bgColor, setBgColor] = useState("");
 
   useEffect(() => {
@@ -11,10 +11,10 @@ function WalletCard({ promo, name, service, logo, details }) {
     <div className="relative flex h-[530px] w-[342px] flex-col rounded-2xl border border-neutral-700 bg-white px-8 py-7 shadow-lg">
       <div className="flex w-full flex-1 flex-col items-center gap-4">
         {/* Header */}
-        <div className="flex w-full items-center justify-between gap-4">
+        <div className="flex w-full items-center justify-between gap-6">
           <img className="w-[90px]" src={logo} alt="brand logo" />
-          <h1 className="w-24 text-2xl font-semibold text-[#297da9] uppercase">
-            {`${promo} off`}
+          <h1 className="flex-1 text-2xl font-bold text-[#297da9] uppercase">
+            {`${promo}`}
           </h1>
         </div>
 
@@ -24,8 +24,8 @@ function WalletCard({ promo, name, service, logo, details }) {
             {`Get ${promo} off at your next ${name} ${service}`}
           </h2>
           <ul className="flex list-inside list-disc flex-col gap-3 text-sm font-medium text-neutral-500">
-            {Array.isArray(details) &&
-              details.map((line, idx) => <li key={idx}>{line}</li>)}
+            {Array.isArray(conditions) &&
+              conditions.map((line, idx) => <li key={idx}>{line}</li>)}
           </ul>
         </div>
       </div>
