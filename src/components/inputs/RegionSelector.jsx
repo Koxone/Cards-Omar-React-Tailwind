@@ -15,7 +15,8 @@ function RegionSelector() {
         <optgroup label="México">
           <option value="CUN">Cancún</option>
           <option value="SJD">Los Cabos</option>
-          <option value="CUN-PCM">Playa del Carmen</option>
+          <option value="PVR">Puerto Vallarta</option>
+          <option value="TQO">Tulum</option>
         </optgroup>
 
         <optgroup label="República Dominicana">
