@@ -19,7 +19,11 @@ function CouponCardV3({
     <div className="max-h-[353px] max-w-[345px]">
       <div className="grid grid-rows-[200px_50px_1fr] rounded-2xl border border-[#297da9] shadow-2xl">
         <div className="flex flex-col items-center justify-center p-4 text-center">
-          <img src={logo} alt="" />
+          <img
+            className="mb-auto max-h-[80px] min-h-[60px] max-w-[80px] min-w-[60px] object-contain"
+            src={logo}
+            alt=""
+          />
           <h2 className="text-3xl leading-tight font-bold tracking-widest break-words text-[#297da9] uppercase">
             {promo}
           </h2>
