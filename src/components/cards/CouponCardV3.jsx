@@ -15,6 +15,7 @@ function CouponCardV3({
     const color = window.getComputedStyle(document.body).backgroundColor;
     setBgColor(color);
   });
+
   return (
     <div className="relative">
       {/* Left semicircle border - positioned outside the clipped container */}
@@ -46,6 +47,7 @@ function CouponCardV3({
           }}
         />
       </div>
+
       <div className="max-h-[353px] max-w-[345px] rounded-2xl">
         <div
           className="relative grid grid-rows-[200px_50px_1fr] overflow-hidden rounded-2xl border border-[#297da9]"
