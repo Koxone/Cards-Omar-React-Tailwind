@@ -16,49 +16,25 @@ function CouponCardV3({
     setBgColor(color);
   });
   return (
-    <div className="relative flex h-[353px] w-[345px] flex-col justify-between rounded-2xl border border-neutral-700 bg-white px-8 py-6 shadow-lg">
-      {/* Logo and Text */}
-      <div className="flex flex-grow flex-col items-center justify-start gap-3">
-        <div className="flex h-[90px] items-center justify-center">
-          <img
-            className="h-[90px] w-[90px] object-contain"
-            src={logo}
-            alt="Brand Logo"
-          />
-        </div>
-        <div className="text-center">
+    <div className="max-h-[353px] max-w-[345px]">
+      <div className="grid grid-rows-[200px_50px_1fr] rounded-2xl border border-[#297da9] shadow-2xl">
+        <div className="flex flex-col items-center justify-center p-4 text-center">
+          <img src="/assets/mcdonalds.png" alt="" />
           <h2 className="text-3xl leading-tight font-bold tracking-widest break-words text-[#297da9] uppercase">
-            {promo}
+            20% OFF Family Buckets
           </h2>
-          <p className="font-medium tracking-wider text-[#297da9]">
-            {categorie}
-          </p>
+          <p className="font-medium tracking-wider text-[#297da9]">Fast food</p>
         </div>
-      </div>
-
-      {/* Line and Circles */}
-      <div className="relative mt-2 h-6 w-full">
-        <div className="absolute inset-0 h-[1px] w-full bg-[linear-gradient(to_right,_#8a8888_4px,_transparent_4px)] bg-[length:8px_1px] bg-repeat-x" />
-        <div
-          style={{ backgroundColor: bgColor }}
-          className="absolute top-0 left-[-19%] h-10 w-10 -translate-y-1/2 rounded-full border-r border-neutral-700"
-        />
-        <div
-          style={{ backgroundColor: bgColor }}
-          className="absolute top-0 right-[-19%] h-10 w-10 -translate-y-1/2 rounded-full border-l border-neutral-700"
-        />
-      </div>
-
-      {/* Button */}
-      <div className="flex w-full items-center justify-center pt-3">
-        <button
-          onClick={() =>
-            onClick({ promo, name, logo, conditions, categorie, valid, description })
-          }
-          className="cursor-pointer rounded-[42px] border bg-[#297da9] px-12 py-4 text-base font-semibold text-white transition-colors duration-300 hover:bg-[#004165] active:bg-[#004165]"
-        >
-          View Details
-        </button>
+        <div className="z-50 flex flex-row items-center bg-[#f9f9f9]">
+          <div className="h-[28px] w-[14px] rounded-tl-[0px] rounded-tr-[14px] rounded-br-[14px] rounded-bl-[0px] border-r-1 border-[#297da9] bg-[#f9f9f9]"></div>
+          <div className="h-[1px] w-full border-b border-dashed border-b-[rgba(204,222,240,0.6)]"></div>
+          <div className="h-[28px] w-[14px] rounded-tl-[14px] rounded-tr-[0px] rounded-br-[0px] rounded-bl-[14px] border-l-1 border-[#297da9] bg-[#f9f9f9]"></div>
+        </div>
+        <div className="flex w-full items-center justify-center p-4 pt-3">
+          <button className="cursor-pointer rounded-[42px] border bg-[#297da9] px-12 py-4 text-base font-semibold text-white transition-colors duration-300 hover:bg-[#004165] active:bg-[#004165]">
+            View Details
+          </button>
+        </div>
       </div>
     </div>
   );
