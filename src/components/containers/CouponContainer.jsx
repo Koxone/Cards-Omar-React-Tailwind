@@ -19,7 +19,7 @@ function CouponContainer({ onClick }) {
 
   return (
     <div className="flex flex-col items-center justify-center gap-4 p-4">
-      <div className="flex w-full items-center justify-between gap-10">
+      <div className="flex w-full flex-col items-center justify-between gap-10 md:flex-row">
         <PromotionsBanner />
         <RegionSelector />
       </div>
