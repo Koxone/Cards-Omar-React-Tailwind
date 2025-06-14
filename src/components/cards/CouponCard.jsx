@@ -38,13 +38,13 @@ function CouponCard({
 
   const getClipPath = (height) => {
     const clip70 = `polygon(
-    0% 0%, 0% 33.5%, 3% 40%, 3% 60%, 0% 58.2%, 0% 100%,
-    100% 100%, 100% 58.2%, 97% 60%, 97% 36%, 100% 34.1%, 100% 0%
+    0% 0%, 0% 32.5%, 3% 40%, 3% 60%, 0% 59.2%, 0% 100%,
+    100% 100%, 100% 58.9%, 97% 60%, 97% 36%, 100% 32.7%, 100% 0%
   )`;
 
     const clip102 = `polygon(
-    0% 0%, 0% 37.5%, 3% 40%, 3% 60%, 0% 55.9%, 0% 100%,
-    100% 100%, 100% 56.2%, 97% 60%, 97% 36%, 100% 37.6%, 100% 0%
+    0% 0%, 0% 36%, 3% 40%, 3% 60%, 0% 57%, 0% 100%,
+    100% 100%, 100% 57.2%, 97% 60%, 97% 36%, 100% 36.4%, 100% 0%
   )`;
 
     return height < 86 ? clip70 : clip102;
@@ -54,7 +54,7 @@ function CouponCard({
     <div className="relative">
       {/* Left semicircle border */}
       <div
-        className="absolute left-[-3.2%] z-10 h-[27px] w-[27px]"
+        className="absolute left-[-3.9%] z-10 h-[27px] w-[27px]"
         style={{
           top: `${semicircleOffset}px`,
         }}
@@ -69,7 +69,7 @@ function CouponCard({
 
       {/* Right semicircle border */}
       <div
-        className="absolute right-[-3.4%] z-10 h-[27px] w-[27px]"
+        className="absolute right-[-3.9%] z-10 h-[27px] w-[27px]"
         style={{
           top: `${semicircleOffset}px`,
         }}
@@ -97,7 +97,7 @@ function CouponCard({
         ref={mainRef}
         id="main"
         style={{ clipPath: getClipPath(mainHeight) }}
-        className="grid max-h-[137px] max-w-[385px] flex-1 cursor-pointer grid-cols-[100px_50px_1fr] items-center overflow-hidden rounded-2xl border border-[var(--color-primary)] p-4"
+        className="grid max-h-[137px] max-w-[320px] flex-1 cursor-pointer grid-cols-[100px_50px_1fr] items-center overflow-hidden rounded-2xl border border-[var(--color-primary)] p-4"
       >
         <div className="h-fit w-fit pr-9 pl-4">
           <img
@@ -108,7 +108,7 @@ function CouponCard({
         </div>
         <div className="h-full border-l border-dashed border-gray-400" />
         <div className="flex-1 pl-4 text-left text-sm font-medium">
-          <p className="text-2xl text-[var(--color-primary)]">{promo}</p>
+          <p className="text-[17px] text-[var(--color-primary)]">{promo}</p>
           <p className="text-base font-medium text-[var(--color-primary)]">
             {name}
           </p>
