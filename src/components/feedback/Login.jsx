@@ -61,7 +61,7 @@ function Login({ onClose, visible, onLoginSuccess }) {
     <>
       <div
         onClick={onClose}
-        className="fixed top-0 left-0 z-50 flex h-screen w-screen items-center justify-center bg-black/50"
+        className="fixed top-0 left-0 z-50 flex h-screen w-screen items-center justify-center border border-[var(--color-primary)] bg-black/50"
       >
         <div
           onClick={(e) => e.stopPropagation()}
