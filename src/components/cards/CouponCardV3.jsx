@@ -29,11 +29,13 @@ function CouponCardV3({
           </h2>
           <p className="font-medium tracking-wider text-[#297da9]">Fast food</p>
         </div>
+
         <div className="flex flex-row items-center bg-[#f9f9f9]">
           <div className="h-[28px] w-[14px] rounded-tl-[0px] rounded-tr-[14px] rounded-br-[14px] rounded-bl-[0px] border-r-1 border-[#297da9] bg-[#f9f9f9]"></div>
           <div className="h-[1px] w-full border-b border-dashed border-b-[rgba(204,222,240,0.6)]"></div>
           <div className="h-[28px] w-[14px] rounded-tl-[14px] rounded-tr-[0px] rounded-br-[0px] rounded-bl-[14px] border-l-1 border-[#297da9] bg-[#f9f9f9]"></div>
         </div>
+
         <div className="flex w-full items-center justify-center p-4 pt-3">
           <button
             onClick={() =>
