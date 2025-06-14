@@ -43,7 +43,7 @@ function CouponCard({ name, validUntil, promo, logo }) {
 
   return (
     <div className="relative">
-      {/* Left semicircle border - positioned outside the clipped container */}
+      {/* Left semicircle border */}
       <div
         className="absolute left-[-3.2%] z-10 h-[27px] w-[27px]"
         style={{
@@ -77,7 +77,7 @@ function CouponCard({ name, validUntil, promo, logo }) {
         ref={mainRef}
         id="main"
         style={{ clipPath: getClipPath(mainHeight) }}
-        className="grid max-h-[137px] max-w-[385px] flex-1 grid-cols-[100px_50px_1fr] items-center overflow-hidden rounded-2xl border border-[var(--color-primary)] p-4"
+        className="grid max-h-[137px] max-w-[385px] flex-1 cursor-pointer grid-cols-[100px_50px_1fr] items-center overflow-hidden rounded-2xl border border-[var(--color-primary)] p-4"
       >
         <div className="h-fit w-fit pr-9 pl-4">
           <img
