@@ -7,7 +7,7 @@ function CouponCard({ name, validUntil, promo, logo }) {
     setBgColor(color);
   });
   return (
-    <div className="relative flex max-h-[352px] min-h-[104px] w-[345px] cursor-pointer flex-col items-center gap-4 rounded-[8px] border border-neutral-700 bg-white px-4 py-4 shadow-xl">
+    <div className="relative flex max-h-[352px] min-h-[104px] w-[345px] cursor-pointer flex-col items-center gap-4 rounded-[8px] border border-[#297da9] bg-white px-4 py-4 shadow-xl">
       <div
         style={{ backgroundColor: bgColor }}
         className="absolute top-[50%] left-[-6%] h-8 w-8 translate-y-[-50%] rounded-full border-r-1 border-neutral-700"
