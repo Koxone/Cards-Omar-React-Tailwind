@@ -14,6 +14,13 @@ function App() {
 
   const [selectedItem, setSelectedItem] = useState(null);
 
+  useEffect(() => {
+    const storedLogin = localStorage.getItem("isLoggedIn");
+    if (storedLogin === "true") {
+      setIsLoggedIn(true);
+    }
+  }, []);
+
   const handleClick = (clickedItem) => {
     console.log("Clicked item:", clickedItem);
     setSelectedItem(clickedItem);
@@ -45,7 +52,10 @@ function App() {
         <Login
           visible={true}
           onClose={() => setShowLogin(false)}
-          onLoginSuccess={() => setIsLoggedIn(true)}
+          onLoginSuccess={() => {
+            setIsLoggedIn(true);
+            localStorage.setItem("isLoggedIn", "true");
+          }}
         />
       )}
       <div className="container">
