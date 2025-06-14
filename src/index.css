@@ -27,3 +27,7 @@ main {
   max-width: 1280px;
   padding: 0 15px;
 }
+
+@theme {
+  --color-primary: #297da9;
+}
