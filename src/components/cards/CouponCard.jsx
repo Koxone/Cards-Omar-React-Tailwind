@@ -2,7 +2,16 @@
 
 import { useEffect, useState, useRef } from "react";
 
-function CouponCard({ name, validUntil, promo, logo }) {
+function CouponCard({
+  name,
+  validUntil,
+  promo,
+  logo,
+  onClick,
+  conditions,
+  categorie,
+  description,
+}) {
   const [bgColor, setBgColor] = useState("");
   useEffect(() => {
     const color = window.getComputedStyle(document.body).backgroundColor;
@@ -74,6 +83,17 @@ function CouponCard({ name, validUntil, promo, logo }) {
       </div>
 
       <div
+        onClick={() =>
+          onClick({
+            promo,
+            name,
+            logo,
+            conditions,
+            categorie,
+            validUntil,
+            description,
+          })
+        }
         ref={mainRef}
         id="main"
         style={{ clipPath: getClipPath(mainHeight) }}
