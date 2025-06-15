@@ -2,10 +2,10 @@ import React from "react";
 
 function RegionSelector() {
   return (
-    <div>
+    <div className="w-full md:w-auto">
       <select
         name="region"
-        className="rounded-md border px-4 py-2 text-sm"
+        className="w-full rounded-md border px-4 py-2 text-sm md:w-auto"
         defaultValue=""
       >
         <option value="" disabled>
