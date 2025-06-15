@@ -7,11 +7,9 @@ import Login from "./components/feedback/Login";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
-
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
   const [showLogin, setShowLogin] = useState(false);
-
+  const [region, setRegion] = useState("all");
   const [selectedItem, setSelectedItem] = useState(null);
 
   useEffect(() => {
@@ -33,7 +31,7 @@ function App() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center">
+    <main className="flex min-h-screen flex-col items-center justify-start">
       {showModal && selectedItem && !showLogin && (
         <Modal
           visible={true}
@@ -59,7 +57,7 @@ function App() {
         />
       )}
       <div className="container">
-        <Landing onClick={handleClick} />
+        <Landing onClick={handleClick} region={region} setRegion={setRegion} />
       </div>
     </main>
   );

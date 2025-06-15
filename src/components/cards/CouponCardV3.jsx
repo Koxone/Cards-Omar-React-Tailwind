@@ -9,6 +9,7 @@ function CouponCardV3({
   description,
   logo,
   onClick,
+  region,
 }) {
   const [bgColor, setBgColor] = useState("");
   useEffect(() => {
@@ -97,6 +98,7 @@ function CouponCardV3({
                   categorie,
                   valid,
                   description,
+                  region,
                 })
               }
               className="cursor-pointer rounded-[42px] border bg-[#297da9] px-12 py-4 text-base font-semibold text-white transition-colors duration-300 hover:bg-[#004165] active:bg-[#004165]"

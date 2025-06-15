@@ -1,10 +1,14 @@
 import CouponContainer from "../components/containers/CouponContainer";
 import data from "/data";
 
-function Landing({ onClick }) {
+function Landing({ onClick, region, setRegion }) {
   return (
     <div className="">
-      <CouponContainer onClick={onClick} />
+      <CouponContainer
+        region={region}
+        setRegion={setRegion}
+        onClick={onClick}
+      />
     </div>
   );
 }

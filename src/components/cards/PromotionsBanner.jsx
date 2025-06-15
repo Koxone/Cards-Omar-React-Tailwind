@@ -2,16 +2,22 @@ import React from "react";
 
 function PromotionsBanner() {
   return (
-    <div className="flex w-full items-center justify-between rounded-2xl border border-neutral-700 bg-white p-3 shadow-lg">
-      <div>
-        <p className="text-base font-medium tracking-wide uppercase">
+    <div className="flex w-[281px] items-center justify-between rounded-xl border border-gray-300 bg-gradient-to-r from-blue-50 to-white p-2.5 shadow-md transition-all duration-300 hover:shadow-lg md:w-full">
+      <div className="min-w-0 flex-1 pr-2">
+        <p className="text-xs font-bold tracking-wider text-blue-700 uppercase md:text-[13px]">
           promotions
         </p>
-        <p className="text-xl font-bold tracking-wide text-[#024466]">
+        <p className="truncate text-[11px] font-medium text-blue-900 md:text-[12px] md:font-semibold">
           Enjoy our exclusive promotions and Get the best value of your booking
         </p>
       </div>
-      <img src="/assets/banner.png" alt="gift icon" />
+      <div className="flex-shrink-0">
+        <img
+          className="h-6 w-6 md:h-7 md:w-7"
+          src="/assets/banner.png"
+          alt="gift icon"
+        />
+      </div>
     </div>
   );
 }

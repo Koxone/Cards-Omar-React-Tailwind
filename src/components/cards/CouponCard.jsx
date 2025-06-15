@@ -11,6 +11,7 @@ function CouponCard({
   conditions,
   categorie,
   description,
+  region,
 }) {
   const [bgColor, setBgColor] = useState("");
   useEffect(() => {
@@ -92,6 +93,7 @@ function CouponCard({
             categorie,
             validUntil,
             description,
+            region,
           })
         }
         ref={mainRef}
@@ -108,7 +110,9 @@ function CouponCard({
         </div>
         <div className="h-full border-l border-dashed border-gray-400" />
         <div className="flex-1 pl-4 text-left text-sm font-medium">
-          <p className="text-[18px] font-semibold text-[var(--color-primary)]">{promo}</p>
+          <p className="text-[18px] font-semibold text-[var(--color-primary)]">
+            {promo}
+          </p>
           <p className="text-base font-normal text-[var(--color-primary)]">
             {name}
           </p>
