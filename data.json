@@ -1,7 +1,7 @@
 [
   {
     "name": "McDonald's",
-    "region": "cancun",
+    "region": "punta cana",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -17,7 +17,7 @@
   },
   {
     "name": "Starbucks",
-    "region": "cancun",
+    "region": "los cabos",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -33,7 +33,7 @@
   },
   {
     "name": "KFC",
-    "region": "cancun",
+    "region": "puerto vallarta",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -49,7 +49,7 @@
   },
   {
     "name": "Uber",
-    "region": "cancun",
+    "region": "tulum",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -81,7 +81,7 @@
   },
   {
     "name": "Subway",
-    "region": "cancun",
+    "region": "los cabos",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -97,7 +97,7 @@
   },
   {
     "name": "Pizza Hut",
-    "region": "cancun",
+    "region": "puerto vallarta",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -113,7 +113,7 @@
   },
   {
     "name": "Taco Bell",
-    "region": "cancun",
+    "region": "punta cana",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -129,7 +129,7 @@
   },
   {
     "name": "Wendy's",
-    "region": "cancun",
+    "region": "tulum",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -161,7 +161,7 @@
   },
   {
     "name": "Dunkin'",
-    "region": "cancun",
+    "region": "tulum",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
@@ -177,7 +177,7 @@
   },
   {
     "name": "Panera Bread",
-    "region": "cancun",
+    "region": "los cabos",
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
     "valid": "July 30 2026",
     "categorie": "Fast Food",
