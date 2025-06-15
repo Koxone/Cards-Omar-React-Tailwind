@@ -38,8 +38,8 @@ function CouponCard({
 
   const getClipPath = (height) => {
     const clip70 = `polygon(
-    0% 0%, 0% 32.5%, 3% 40%, 3% 60%, 0% 59.2%, 0% 100%,
-    100% 100%, 100% 58.9%, 97% 60%, 97% 36%, 100% 32.7%, 100% 0%
+    0% 0%, 0% 32.0%, 3% 40%, 3% 60%, 0% 58.9%, 0% 100%,
+    100% 100%, 100% 58.9%, 97% 60%, 97% 36%, 100% 32.4%, 100% 0%
   )`;
 
     const clip102 = `polygon(
@@ -54,7 +54,7 @@ function CouponCard({
     <div className="relative">
       {/* Left semicircle border */}
       <div
-        className="absolute left-[-3.9%] z-10 h-[27px] w-[27px]"
+        className="absolute left-[-4.5%] z-10 h-[27px] w-[27px]"
         style={{
           top: `${semicircleOffset}px`,
         }}
@@ -69,7 +69,7 @@ function CouponCard({
 
       {/* Right semicircle border */}
       <div
-        className="absolute right-[-3.9%] z-10 h-[27px] w-[27px]"
+        className="absolute right-[-4.6%] z-10 h-[27px] w-[27px]"
         style={{
           top: `${semicircleOffset}px`,
         }}
@@ -97,9 +97,9 @@ function CouponCard({
         ref={mainRef}
         id="main"
         style={{ clipPath: getClipPath(mainHeight) }}
-        className="grid max-h-[137px] max-w-[320px] flex-1 cursor-pointer grid-cols-[100px_50px_1fr] items-center overflow-hidden rounded-2xl border border-[var(--color-primary)] p-4"
+        className="grid max-h-[137px] max-w-[320px] flex-1 cursor-pointer grid-cols-[80px_auto_1fr] items-center overflow-hidden rounded-2xl border border-[var(--color-primary)] p-4"
       >
-        <div className="h-fit w-fit pr-9 pl-4">
+        <div className="h-fit w-fit pr-6 pl-4">
           <img
             className="h-full w-full max-w-[40px] object-cover"
             src={logo || "/placeholder.svg"}
@@ -108,8 +108,8 @@ function CouponCard({
         </div>
         <div className="h-full border-l border-dashed border-gray-400" />
         <div className="flex-1 pl-4 text-left text-sm font-medium">
-          <p className="text-[17px] text-[var(--color-primary)]">{promo}</p>
-          <p className="text-base font-medium text-[var(--color-primary)]">
+          <p className="text-[18px] font-semibold text-[var(--color-primary)]">{promo}</p>
+          <p className="text-base font-normal text-[var(--color-primary)]">
             {name}
           </p>
           <p className="text-[10px] font-medium text-neutral-500">{`Valid until ${validUntil}`}</p>
