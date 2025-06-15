@@ -2,14 +2,14 @@ import React from "react";
 
 function RegionSelector({ onChange }) {
   return (
-    <div className="relative h-[39px] w-[170px] md:h-[57px]">
+    <div className="relative h-[39px] w-full md:h-[57px]">
       <select
         name="region"
         className="h-full w-full appearance-none rounded-lg border border-gray-300 bg-white pr-7 pl-3 text-sm text-gray-700 transition-all focus:border-blue-500 focus:ring-1 focus:ring-blue-500 focus:outline-none"
         defaultValue="all"
         onChange={(e) => onChange(e.target.value)}
       >
-        <option value="all">Regiones</option>
+        <option value="all">Todas las Regiones</option>
 
         <optgroup label="México" className="text-gray-500">
           <option value="cancun" className="text-gray-700">

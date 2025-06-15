@@ -24,7 +24,7 @@ function CouponContainer({ onClick, region, setRegion }) {
       : data;
 
   return (
-    <div className="flex flex-col items-center justify-center gap-4 p-4">
+    <div className="flex max-w-[1280px] flex-col items-center justify-center gap-4 p-4">
       <div className="flex w-full flex-col items-center justify-between gap-3 md:flex-row md:gap-10">
         <PromotionsBanner />
         <RegionSelector onChange={setRegion} />
