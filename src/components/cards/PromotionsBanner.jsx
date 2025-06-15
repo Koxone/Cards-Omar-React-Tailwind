@@ -2,7 +2,8 @@ import React from "react";
 
 function PromotionsBanner() {
   return (
-    <div className="flex max-w-[281px] items-center justify-between rounded-xl border border-gray-300 bg-gradient-to-r from-blue-50 to-white p-2.5 shadow-md transition-all duration-300 hover:shadow-lg md:w-full md:max-w-full">
+    <div className="flex max-w-[281px] items-center justify-between rounded-xl border border-gray-300 bg-gradient-to-r 
+    from-blue-50 to-white p-2.5 shadow-md transition-all duration-300 hover:shadow-lg md:w-full md:max-w-full">
       <div className="min-w-0 flex-1 pr-2">
         <p className="text-xs font-bold tracking-wider text-blue-700 uppercase md:text-[13px]">
           promotions
