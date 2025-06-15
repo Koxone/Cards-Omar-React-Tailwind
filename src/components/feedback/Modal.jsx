@@ -37,7 +37,7 @@ function Modal({
       <div
         onClick={(e) => e.stopPropagation()}
         style={{ backgroundColor: bgColor }}
-        className="absolute top-1/2 left-1/2 z-10 flex -translate-x-1/2 -translate-y-1/2 transform flex-col gap-6 rounded-2xl border p-8 shadow-2xl sm:h-[756px] sm:w-[644px]"
+        className="absolute top-1/2 left-1/2 z-10 flex h-[calc(100vh-140px)] w-full -translate-x-1/2 -translate-y-1/2 transform flex-col gap-6 rounded-2xl border border-[#297da9] p-8 shadow-2xl sm:h-[756px] sm:w-[644px]"
       >
         {/* Banner Image */}
         <div>
@@ -56,27 +56,29 @@ function Modal({
             </p>
             <p className="text-base text-neutral-500">{categorie}</p>
           </div>
-          <img className="w-[120px]" src={logo} alt="brand logo" />
+          <img className="md:w-[120px]" src={logo} alt="brand logo" />
         </div>
 
         {/* Description and Apply Button */}
         <div className="flex h-full flex-col">
           <div className="mb-auto flex flex-col gap-4">
-            <p className="text-2xl font-semibold tracking-wider">Description</p>
+            <p className="font-semibold tracking-wider md:text-2xl">
+              Description
+            </p>
             <div>
-              <p className="text-base leading-9 font-medium tracking-wide text-neutral-500">
+              <p className="text-xs font-medium tracking-wide text-neutral-500 md:text-base md:leading-9">
                 {description}
               </p>
             </div>
           </div>
           <div className="flex flex-col items-center gap-4">
             <a
-              className="text-sm font-medium text-[#297da9] underline underline-offset-2 transition-colors duration-200 hover:text-[#004165]"
+              className="text-xs font-medium text-[#297da9] underline underline-offset-2 transition-colors duration-200 hover:text-[#004165] md:text-sm"
               href="#"
             >
               Terms & Conditions
             </a>
-            <div className="flex w-full items-center justify-evenly px-4 pt-2">
+            <div className="flex w-full items-center justify-between px-4 pt-2">
               <button
                 onClick={() => {
                   if (isLoggedIn) {
@@ -90,7 +92,7 @@ function Modal({
               >
                 <img
                   id="apple"
-                  className="h-[50px] w-[160px] cursor-pointer"
+                  className="w-[130px] cursor-pointer md:h-[50px] md:w-[160px]"
                   src="/assets/apple.png"
                   alt="Apple Wallet"
                 />
@@ -109,7 +111,7 @@ function Modal({
                 }}
               >
                 <img
-                  className="h-[50px] w-[160px] cursor-pointer"
+                  className="h-[42px] w-[130px] cursor-pointer md:h-[50px] md:w-[160px]"
                   src="/assets/google.png"
                   alt="Google Wallet"
                 />

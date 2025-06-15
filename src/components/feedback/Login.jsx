@@ -99,11 +99,11 @@ function Login({ onClose, visible, onLoginSuccess }) {
             </div>
           </div>
 
-          <div className="flex w-full items-center justify-start gap-4">
+          <div className="mt-14 flex w-full items-center justify-center gap-4 md:mt-0 md:justify-start">
             <button
               onClick={onClose}
               type="button"
-              className="flex cursor-pointer items-center justify-center rounded-[42px] border bg-neutral-500/50 px-5 py-3 text-base font-semibold text-white shadow-2xl transition-colors duration-300 hover:bg-[#004165] active:bg-[#004165]"
+              className="flex w-[124.63px] cursor-pointer items-center justify-center rounded-[42px] border bg-neutral-500/50 px-5 py-3 text-base font-semibold text-white shadow-2xl transition-colors duration-300 hover:bg-[#004165] active:bg-[#004165]"
             >
               Close
             </button>
