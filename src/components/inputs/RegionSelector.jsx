@@ -1,6 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 function RegionSelector({ onChange }) {
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
+  const { t } = useTranslation();
   return (
     <div className="relative h-[39px] w-full md:h-[57px]">
       <select
@@ -9,26 +13,26 @@ function RegionSelector({ onChange }) {
         defaultValue="all"
         onChange={(e) => onChange(e.target.value)}
       >
-        <option value="all">Todas las Regiones</option>
+        <option value="all">{t("regionSelector.selectRegion")}</option>
 
         <optgroup label="México" className="text-gray-500">
           <option value="cancun" className="text-gray-700">
-            Cancún
+            {t("regionSelector.cancun")}
           </option>
           <option value="los cabos" className="text-gray-700">
-            Los Cabos
+            {t("regionSelector.tulum")}
           </option>
           <option value="puerto vallarta" className="text-gray-700">
-            Puerto Vallarta
+            {t("regionSelector.losCabos")}
           </option>
           <option value="tulum" className="text-gray-700">
-            Tulum
+            {t("regionSelector.puertoVallarta")}
           </option>
         </optgroup>
 
         <optgroup label="República Dominicana" className="text-gray-500">
           <option value="punta cana" className="text-gray-700">
-            Punta Cana
+            {t("regionSelector.puntaCana")}
           </option>
         </optgroup>
       </select>

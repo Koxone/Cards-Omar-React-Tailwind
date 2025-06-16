@@ -18,26 +18,23 @@
     "cancel": "Cancel",
     "close": "Close"
   },
-  "coupon": {
-    "title": "Discount Coupon",
-    "conditions": "Conditions",
-    "valid": "Valid until",
-    "seeMore": "See more"
+  "couponMobile": {
+    "valid": "Valid until "
   },
   "wallet": {
     "empty": "Your wallet is empty",
     "addCoupon": "Add coupon"
   },
   "promotions": {
-    "title": "Special Promotions",
-    "noPromos": "No promotions available"
+    "title": "Promotions",
+    "description": "Enjoy our exclusive promotions and Get the best value of your booking"
   },
-  "landing": {
+  "couponContainer": {
     "welcome": "Welcome to our platform",
     "subtitle": "Get the best discounts easily"
   },
   "regionSelector": {
-    "selectRegion": "Select a region",
+    "selectRegion": "All Regions",
     "mexico": "Mexico",
     "dominicanRepublic": "Dominican Republic",
     "cancun": "Cancun",

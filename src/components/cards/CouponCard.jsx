@@ -1,6 +1,6 @@
 "use client";
-
 import { useEffect, useState, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 function CouponCard({
   name,
@@ -39,8 +39,8 @@ function CouponCard({
 
   const getClipPath = (height) => {
     const clip70 = `polygon(
-    0% 0%, 0% 32.0%, 3% 40%, 3% 60%, 0% 58.9%, 0% 100%,
-    100% 100%, 100% 58.9%, 97% 60%, 97% 36%, 100% 32.4%, 100% 0%
+    0% 0%, 0% 33%, 3% 40%, 3% 60%, 0% 58.9%, 0% 100%,
+    100% 100%, 100% 58.9%, 97% 60%, 97% 36%, 100% 33.8%, 100% 0%
   )`;
 
     const clip102 = `polygon(
@@ -49,6 +49,32 @@ function CouponCard({
   )`;
 
     return height < 86 ? clip70 : clip102;
+  };
+
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
+  const { t } = useTranslation();
+
+  const breakAfterWords = (text) => {
+    const words = text.split(" ");
+
+    if (words.length <= 2) {
+      return text;
+    }
+
+    const firstLine = words.slice(0, 2).join(" ");
+    const secondLine = words.slice(2, 4).join(" ");
+    const remaining = words.slice(4).join(" ");
+
+    return (
+      <>
+        <span className="block">{firstLine}</span>
+        {secondLine && <span className="block">{secondLine}</span>}
+        {remaining && (
+          <span className="block text-[16px] leading-tight">{remaining}</span>
+        )}
+      </>
+    );
   };
 
   return (
@@ -105,18 +131,20 @@ function CouponCard({
           <img
             className="h-full w-full max-w-[40px] object-cover"
             src={logo || "/placeholder.svg"}
-            alt=""
+            alt="logo icon"
           />
         </div>
         <div className="h-full border-l border-dashed border-gray-400" />
         <div className="flex-1 pl-4 text-left text-sm font-medium">
-          <p className="text-[18px] font-semibold text-[var(--color-primary)]">
-            {promo}
+          <p className="text-[19px] leading-[150%] font-semibold text-[var(--color-primary)]">
+            {breakAfterWords(promo[lang], 2)}
           </p>
           <p className="text-base font-normal text-[var(--color-primary)]">
-            {name}
+            {name[lang]}
           </p>
-          <p className="text-[10px] font-medium text-neutral-500">{`Valid until ${validUntil}`}</p>
+          <p className="text-[7px] font-medium text-neutral-500">
+            {`${t("couponMobile.valid")} ${validUntil[lang]}`}
+          </p>
         </div>
       </div>
     </div>
