@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function CouponCardV3({
   name,
@@ -16,6 +17,10 @@ function CouponCardV3({
     const color = window.getComputedStyle(document.body).backgroundColor;
     setBgColor(color);
   });
+
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
+  const { t } = useTranslation();
 
   return (
     <div className="relative">
@@ -73,17 +78,17 @@ function CouponCardV3({
               src={logo}
               alt=""
             />
-            <h2 className="text-3xl leading-tight font-bold tracking-widest break-words text-[#297da9] uppercase">
-              {promo}
+            <h2 className="text-2xl leading-tight font-bold tracking-widest break-words text-[#297da9] uppercase">
+              {promo[lang]}
             </h2>
             <p className="font-medium tracking-wider text-[#297da9]">
-              Fast food
+              {categorie[lang]}
             </p>
           </div>
 
           <div className="flex flex-row items-center bg-[#f9f9f9]">
             {/* <div className="h-[28px] w-[14px] rounded-tl-[0px] rounded-tr-[14px] rounded-br-[14px] rounded-bl-[0px] border-r-1 border-[#297da9] bg-[#f9f9f9]"></div> */}
-            <div className="h-[1px] w-full border-b border-dashed border-b-[rgba(204,222,240,0.6)]"></div>
+            <div className="h-[1px] w-full border-b border-dashed border-b-neutral-400"></div>
             {/* <div className="h-[28px] w-[14px] rounded-tl-[14px] rounded-tr-[0px] rounded-br-[0px] rounded-bl-[14px] border-l-1 border-[#297da9] bg-[#f9f9f9]"></div> */}
           </div>
 
@@ -103,7 +108,7 @@ function CouponCardV3({
               }
               className="cursor-pointer rounded-[42px] border bg-[#297da9] px-12 py-4 text-base font-semibold text-white transition-colors duration-300 hover:bg-[#004165] active:bg-[#004165]"
             >
-              View Details
+              {t("couponV3.button")}
             </button>
           </div>
         </div>

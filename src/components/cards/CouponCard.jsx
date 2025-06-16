@@ -81,7 +81,7 @@ function CouponCard({
     <div className="relative">
       {/* Left semicircle border */}
       <div
-        className="absolute left-[-4.5%] z-10 h-[27px] w-[27px]"
+        className="absolute left-[-4.8%] z-10 h-[27px] w-[27px]"
         style={{
           top: `${semicircleOffset}px`,
         }}
@@ -135,7 +135,7 @@ function CouponCard({
           />
         </div>
         <div className="h-full border-l border-dashed border-gray-400" />
-        <div className="flex-1 pl-4 text-left font-medium">
+        <div className="min-w-[150px] flex-1 pl-4 text-left font-medium">
           <p className="text-[19px] font-semibold text-[var(--color-primary)]">
             {breakAfterWords(promo[lang], 2)}
           </p>

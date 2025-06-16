@@ -45,5 +45,8 @@
   },
   "languageButton": {
     "button": "Español"
+  },
+  "couponV3": {
+    "button": "Ver Detalles"
   }
 }
