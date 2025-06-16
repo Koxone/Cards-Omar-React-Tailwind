@@ -1,0 +1,54 @@
+{
+  "language": {
+    "spanish": "Spanish",
+    "english": "English"
+  },
+  "login": {
+    "title": "Find Bookings",
+    "subtitle": "Please enter your booking email and reservation code.",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "reservationCodePlaceholder": "Enter your reservation code",
+    "buttonClose": "Close",
+    "verifying": "Verifying...",
+    "confirm": "Confirm"
+  },
+  "modal": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "close": "Close"
+  },
+  "coupon": {
+    "title": "Discount Coupon",
+    "conditions": "Conditions",
+    "valid": "Valid until",
+    "seeMore": "See more"
+  },
+  "wallet": {
+    "empty": "Your wallet is empty",
+    "addCoupon": "Add coupon"
+  },
+  "promotions": {
+    "title": "Special Promotions",
+    "noPromos": "No promotions available"
+  },
+  "landing": {
+    "welcome": "Welcome to our platform",
+    "subtitle": "Get the best discounts easily"
+  },
+  "regionSelector": {
+    "selectRegion": "Select a region",
+    "mexico": "Mexico",
+    "dominicanRepublic": "Dominican Republic",
+    "cancun": "Cancun",
+    "tulum": "Tulum",
+    "losCabos": "Los Cabos",
+    "puertoVallarta": "Puerto Vallarta",
+    "puntaCana": "Punta Cana"
+  },
+  "userReservationChecker": {
+    "enterCode": "Enter your reservation code",
+    "enterEmail": "Enter your email",
+    "check": "Check reservation"
+  }
+}

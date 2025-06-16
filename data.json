@@ -2,193 +2,469 @@
   {
     "name": "McDonald's",
     "region": "punta cana",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
-    "valid": "July 30 2026",
-    "categorie": "Fast Food",
-    "service": "Delivery",
-    "promo": "25% OFF",
-    "conditions": [
-      "Get 25% off your entire order.",
-      "Valid at participating McDonald's locations.",
-      "Valid until August 31, 2025.",
-      "Cannot be combined with other promotions."
-    ],
+    "description": {
+      "en": "Fast Food Restaurant Chain Serving Burgers, Fries, And Various Menu Items With Quick Service And Convenient Locations Worldwide.",
+      "es": "Cadena De Restaurantes De Comida Rápida Que Sirve Hamburguesas, Papas Fritas Y Varios Elementos Del Menú Con Servicio Rápido Y Ubicaciones Convenientes En Todo El Mundo."
+    },
+    "valid": {
+      "en": "July 30 2026",
+      "es": "30 De Julio 2026"
+    },
+    "categorie": {
+      "en": "Fast Food",
+      "es": "Comida Rápida"
+    },
+    "service": {
+      "en": "Delivery",
+      "es": "Entrega A Domicilio"
+    },
+    "promo": {
+      "en": "25% Off",
+      "es": "25% De Descuento"
+    },
+    "conditions": {
+      "en": [
+        "Get 25% Off Your Entire Order.",
+        "Valid At Participating McDonald's Locations.",
+        "Valid Until August 31, 2025.",
+        "Cannot Be Combined With Other Promotions."
+      ],
+      "es": [
+        "Obtén 25% De Descuento En Todo Tu Pedido.",
+        "Válido En McDonald's Participantes.",
+        "Válido Hasta El 31 De Agosto De 2025.",
+        "No Acumulable Con Otras Promociones."
+      ]
+    },
     "logo": "/assets/mcdonalds.png"
   },
   {
     "name": "Starbucks",
     "region": "los cabos",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
-    "valid": "July 30 2026",
-    "categorie": "Fast Food",
-    "service": "Delivery",
-    "promo": "1 Free Drink",
-    "conditions": [
-      "Enjoy one free drink of your choice.",
-      "Offer valid on purchases over $10.",
-      "Redeem at any U.S. Starbucks location.",
-      "Expires September 15, 2025."
-    ],
+    "description": {
+      "en": "Premium Coffee Chain Offering Specialty Drinks, Fresh Pastries, And A Cozy Atmosphere For Coffee Lovers And Professionals.",
+      "es": "Cadena De Café Premium Que Ofrece Bebidas Especiales, Pasteles Frescos Y Un Ambiente Acogedor Para Los Amantes Del Café Y Profesionales."
+    },
+    "valid": {
+      "en": "July 30 2026",
+      "es": "30 De Julio 2026"
+    },
+    "categorie": {
+      "en": "Fast Food",
+      "es": "Comida Rápida"
+    },
+    "service": {
+      "en": "Delivery",
+      "es": "Entrega A Domicilio"
+    },
+    "promo": {
+      "en": "1 Free Drink",
+      "es": "1 Bebida Gratis"
+    },
+    "conditions": {
+      "en": [
+        "Enjoy One Free Drink Of Your Choice.",
+        "Offer Valid On Purchases Over $10.",
+        "Redeem At Any U.S. Starbucks Location.",
+        "Expires September 15, 2025."
+      ],
+      "es": [
+        "Disfruta Una Bebida Gratis A Tu Elección.",
+        "Válido En Compras Mayores A $10.",
+        "Canjeable En Starbucks De EE.UU.",
+        "Expira El 15 De Septiembre De 2025."
+      ]
+    },
     "logo": "/assets/starbucks.png"
   },
   {
     "name": "KFC",
     "region": "puerto vallarta",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
-    "valid": "July 30 2026",
-    "categorie": "Fast Food",
-    "service": "Delivery",
-    "promo": "20% OFF Family Buckets",
-    "conditions": [
-      "Save 20% on all Family Buckets.",
-      "Available for dine-in and takeout.",
-      "Valid until July 30, 2025.",
-      "Not valid with delivery apps."
-    ],
+    "description": {
+      "en": "Famous Fried Chicken Restaurant Known For Its Secret Recipe Of 11 Herbs And Spices, Offering Family Meals And Quick Service.",
+      "es": "Famoso Restaurante De Pollo Frito Conocido Por Su Receta Secreta De 11 Hierbas Y Especias, Ofreciendo Comidas Familiares Y Servicio Rápido."
+    },
+    "valid": {
+      "en": "July 30 2026",
+      "es": "30 De Julio 2026"
+    },
+    "categorie": {
+      "en": "Fast Food",
+      "es": "Comida Rápida"
+    },
+    "service": {
+      "en": "Delivery",
+      "es": "Entrega A Domicilio"
+    },
+    "promo": {
+      "en": "20% Off Family Buckets",
+      "es": "20% De Descuento En Cubetas Familiares"
+    },
+    "conditions": {
+      "en": [
+        "Save 20% On All Family Buckets.",
+        "Available For Dine-In And Takeout.",
+        "Valid Until July 30, 2025.",
+        "Not Valid With Delivery Apps."
+      ],
+      "es": [
+        "Ahorra 20% En Todas Las Cubetas Familiares.",
+        "Disponible En Restaurante Y Para Llevar.",
+        "Válido Hasta El 30 De Julio De 2025.",
+        "No Válido En Apps De Entrega."
+      ]
+    },
     "logo": "/assets/kfc.png"
   },
   {
     "name": "Uber",
     "region": "tulum",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
-    "valid": "July 30 2026",
-    "categorie": "Fast Food",
-    "service": "Delivery",
-    "promo": "10% OFF Your Ride",
-    "conditions": [
-      "Get 10% off your next ride.",
-      "Valid only through the Uber app.",
-      "Code usable once per user.",
-      "Expires August 15, 2025."
-    ],
+    "description": {
+      "en": "Ride-Sharing And Delivery Service Providing Convenient Transportation And Food Delivery Options Through A Mobile App Platform.",
+      "es": "Servicio De Viajes Compartidos Y Entrega Que Proporciona Opciones Convenientes De Transporte Y Entrega De Comida A Través De Una Plataforma De Aplicación Móvil."
+    },
+    "valid": {
+      "en": "July 30 2026",
+      "es": "30 De Julio 2026"
+    },
+    "categorie": {
+      "en": "Fast Food",
+      "es": "Comida Rápida"
+    },
+    "service": {
+      "en": "Delivery",
+      "es": "Entrega A Domicilio"
+    },
+    "promo": {
+      "en": "10% Off Your Ride",
+      "es": "10% De Descuento En Tu Viaje"
+    },
+    "conditions": {
+      "en": [
+        "Get 10% Off Your Next Ride.",
+        "Valid Only Through The Uber App.",
+        "Code Usable Once Per User.",
+        "Expires August 15, 2025."
+      ],
+      "es": [
+        "Obtén 10% De Descuento En Tu Próximo Viaje.",
+        "Solo Válido Desde La App De Uber.",
+        "Código Válido Una Vez Por Usuario.",
+        "Expira El 15 De Agosto De 2025."
+      ]
+    },
     "logo": "/assets/uber.png"
   },
   {
     "name": "Domino's",
     "region": "cancun",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
-    "valid": "July 30 2026",
-    "categorie": "Fast Food",
-    "service": "Delivery",
-    "promo": "2x1 Pizza Deal",
-    "conditions": [
-      "Buy one pizza, get another free.",
-      "Valid on pizzas of equal or lesser value.",
-      "Offer valid for online orders only.",
-      "Expires September 30, 2025."
-    ],
+    "description": {
+      "en": "Pizza Delivery Chain Specializing In Fresh Made-To-Order Pizzas With Fast Delivery Service And Online Ordering Convenience.",
+      "es": "Cadena De Entrega De Pizza Especializada En Pizzas Frescas Hechas Por Encargo Con Servicio De Entrega Rápida Y Conveniencia De Pedidos En Línea."
+    },
+    "valid": {
+      "en": "July 30 2026",
+      "es": "30 De Julio 2026"
+    },
+    "categorie": {
+      "en": "Fast Food",
+      "es": "Comida Rápida"
+    },
+    "service": {
+      "en": "Delivery",
+      "es": "Entrega A Domicilio"
+    },
+    "promo": {
+      "en": "2x1 Pizza Deal",
+      "es": "2x1 En Pizzas"
+    },
+    "conditions": {
+      "en": [
+        "Buy One Pizza, Get Another Free.",
+        "Valid On Pizzas Of Equal Or Lesser Value.",
+        "Offer Valid For Online Orders Only.",
+        "Expires September 30, 2025."
+      ],
+      "es": [
+        "Compra Una Pizza Y Llévate Otra Gratis.",
+        "Válido En Pizzas De Igual O Menor Valor.",
+        "Promoción Válida Solo En Pedidos En Línea.",
+        "Expira El 30 De Septiembre De 2025."
+      ]
+    },
     "logo": "/assets/dominos.png"
   },
   {
     "name": "Subway",
     "region": "los cabos",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
-    "valid": "July 30 2026",
-    "categorie": "Fast Food",
-    "service": "Delivery",
-    "promo": "2x1 on Footlong",
-    "conditions": [
-      "Get a free footlong sandwich with any purchase.",
-      "Valid at participating Subway locations.",
-      "Offer valid until October 31, 2025.",
-      "Cannot be combined with other offers."
-    ],
+    "description": {
+      "en": "Submarine Sandwich Chain Offering Fresh Ingredients, Customizable Subs, And Healthy Fast Food Options With Made-To-Order Service.",
+      "es": "Cadena De Sándwiches Submarinos Que Ofrece Ingredientes Frescos, Subs Personalizables Y Opciones De Comida Rápida Saludable Con Servicio Hecho Por Encargo."
+    },
+    "valid": {
+      "en": "July 30 2026",
+      "es": "30 De Julio 2026"
+    },
+    "categorie": {
+      "en": "Fast Food",
+      "es": "Comida Rápida"
+    },
+    "service": {
+      "en": "Delivery",
+      "es": "Entrega A Domicilio"
+    },
+    "promo": {
+      "en": "2x1 On Footlong",
+      "es": "2x1 En Subs Grandes"
+    },
+    "conditions": {
+      "en": [
+        "Get A Free Footlong Sandwich With Any Purchase.",
+        "Valid At Participating Subway Locations.",
+        "Offer Valid Until October 31, 2025.",
+        "Cannot Be Combined With Other Offers."
+      ],
+      "es": [
+        "Obtén Un Sub Grande Gratis Con Cualquier Compra.",
+        "Válido En Subway Participantes.",
+        "Válido Hasta El 31 De Octubre De 2025.",
+        "No Se Puede Combinar Con Otras Ofertas."
+      ]
+    },
     "logo": "/assets/subway.png"
   },
   {
     "name": "Pizza Hut",
     "region": "puerto vallarta",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
-    "valid": "July 30 2026",
-    "categorie": "Fast Food",
-    "service": "Delivery",
-    "promo": "Free Breadsticks",
-    "conditions": [
-      "Receive free breadsticks with any pizza order.",
-      "Valid for dine-in and takeout only.",
-      "Offer expires August 31, 2025.",
-      "Not valid with other promotions."
-    ],
+    "description": {
+      "en": "International Pizza Restaurant Chain Known For Pan Pizza, Thin Crust Options, And Family-Friendly Dining Experience With Delivery Service.",
+      "es": "Cadena Internacional De Restaurantes De Pizza Conocida Por Pizza De Sartén, Opciones De Masa Delgada Y Experiencia Gastronómica Familiar Con Servicio De Entrega."
+    },
+    "valid": {
+      "en": "July 30 2026",
+      "es": "30 De Julio 2026"
+    },
+    "categorie": {
+      "en": "Fast Food",
+      "es": "Comida Rápida"
+    },
+    "service": {
+      "en": "Delivery",
+      "es": "Entrega A Domicilio"
+    },
+    "promo": {
+      "en": "Free Breadsticks",
+      "es": "Pan De Ajo Gratis"
+    },
+    "conditions": {
+      "en": [
+        "Receive Free Breadsticks With Any Pizza Order.",
+        "Valid For Dine-In And Takeout Only.",
+        "Offer Expires August 31, 2025.",
+        "Not Valid With Other Promotions."
+      ],
+      "es": [
+        "Recibe Pan De Ajo Gratis Con Cualquier Pizza.",
+        "Válido Solo Para Restaurante O Para Llevar.",
+        "La Promoción Expira El 31 De Agosto De 2025.",
+        "No Válido Con Otras Promociones."
+      ]
+    },
     "logo": "/assets/pizzahut.png"
   },
   {
     "name": "Taco Bell",
     "region": "punta cana",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
-    "valid": "July 30 2026",
-    "categorie": "Fast Food",
-    "service": "Delivery",
-    "promo": "Free Taco",
-    "conditions": [
-      "Get a free taco with any purchase.",
-      "Valid at participating Taco Bell locations.",
-      "Offer valid until September 30, 2025.",
-      "Cannot be combined with other offers."
-    ],
+    "description": {
+      "en": "Mexican-Inspired Fast Food Chain Serving Tacos, Burritos, And Innovative Menu Items With Bold Flavors And Quick Service.",
+      "es": "Cadena De Comida Rápida Inspirada En México Que Sirve Tacos, Burritos Y Elementos Innovadores Del Menú Con Sabores Audaces Y Servicio Rápido."
+    },
+    "valid": {
+      "en": "July 30 2026",
+      "es": "30 De Julio 2026"
+    },
+    "categorie": {
+      "en": "Fast Food",
+      "es": "Comida Rápida"
+    },
+    "service": {
+      "en": "Delivery",
+      "es": "Entrega A Domicilio"
+    },
+    "promo": {
+      "en": "1 Free Taco",
+      "es": "1 Taco Gratis"
+    },
+    "conditions": {
+      "en": [
+        "Get A Free Taco With Any Purchase.",
+        "Valid At Participating Taco Bell Locations.",
+        "Offer Valid Until September 30, 2025.",
+        "Cannot Be Combined With Other Offers."
+      ],
+      "es": [
+        "Obtén Un Taco Gratis Con Cualquier Compra.",
+        "Válido En Taco Bell Participantes.",
+        "Válido Hasta El 30 De Septiembre De 2025.",
+        "No Se Puede Combinar Con Otras Ofertas."
+      ]
+    },
     "logo": "/assets/tacobell.png"
   },
   {
     "name": "Wendy's",
     "region": "tulum",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
-    "valid": "July 30 2026",
-    "categorie": "Fast Food",
-    "service": "Delivery",
-    "promo": "Free Frosty",
-    "conditions": [
-      "Enjoy a free Frosty with any order.",
-      "Valid at participating Wendy's locations.",
-      "Offer valid until October 15, 2025.",
-      "Cannot be combined with other promotions."
-    ],
+    "description": {
+      "en": "Fresh Burger Restaurant Chain Known For Square Patties, Frosty Desserts, And Quality Ingredients With Fast Casual Dining Experience.",
+      "es": "Cadena De Restaurantes De Hamburguesas Frescas Conocida Por Hamburguesas Cuadradas, Postres Frosty E Ingredientes De Calidad Con Experiencia De Comida Casual Rápida."
+    },
+    "valid": {
+      "en": "July 30 2026",
+      "es": "30 De Julio 2026"
+    },
+    "categorie": {
+      "en": "Fast Food",
+      "es": "Comida Rápida"
+    },
+    "service": {
+      "en": "Delivery",
+      "es": "Entrega A Domicilio"
+    },
+    "promo": {
+      "en": "1 Free Frosty",
+      "es": "1 Frosty Gratis"
+    },
+    "conditions": {
+      "en": [
+        "Enjoy A Free Frosty With Any Order.",
+        "Valid At Participating Wendy's Locations.",
+        "Offer Valid Until October 15, 2025.",
+        "Cannot Be Combined With Other Promotions."
+      ],
+      "es": [
+        "Disfruta Un Frosty Gratis Con Cualquier Pedido.",
+        "Válido En Wendy's Participantes.",
+        "Válido Hasta El 15 De Octubre De 2025.",
+        "No Acumulable Con Otras Promociones."
+      ]
+    },
     "logo": "/assets/wendys.png"
   },
   {
     "name": "Chick-fil-A",
     "region": "cancun",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
-    "valid": "July 30 2026",
-    "categorie": "Fast Food",
-    "service": "Delivery",
-    "promo": "Free Chicken Sandwich",
-    "conditions": [
-      "Get a free chicken sandwich with any order.",
-      "Valid at participating Chick-fil-A locations.",
-      "Offer valid until November 30, 2025.",
-      "Cannot be combined with other offers."
-    ],
+    "description": {
+      "en": "Chicken Restaurant Chain Specializing In Breaded Chicken Sandwiches, Nuggets, And Exceptional Customer Service With Quality Ingredients.",
+      "es": "Cadena De Restaurantes De Pollo Especializada En Sándwiches De Pollo Empanizado, Nuggets Y Servicio Al Cliente Excepcional Con Ingredientes De Calidad."
+    },
+    "valid": {
+      "en": "July 30 2026",
+      "es": "30 De Julio 2026"
+    },
+    "categorie": {
+      "en": "Fast Food",
+      "es": "Comida Rápida"
+    },
+    "service": {
+      "en": "Delivery",
+      "es": "Entrega A Domicilio"
+    },
+    "promo": {
+      "en": "Free Chicken Sandwich",
+      "es": "Sándwich De Pollo Gratis"
+    },
+    "conditions": {
+      "en": [
+        "Get A Free Chicken Sandwich With Any Order.",
+        "Valid At Participating Chick-fil-A Locations.",
+        "Offer Valid Until November 30, 2025.",
+        "Cannot Be Combined With Other Offers."
+      ],
+      "es": [
+        "Obtén Un Sándwich De Pollo Gratis Con Cualquier Pedido.",
+        "Válido En Chick-fil-A Participantes.",
+        "Válido Hasta El 30 De Noviembre De 2025.",
+        "No Se Puede Combinar Con Otras Ofertas."
+      ]
+    },
     "logo": "/assets/chickfila.png"
   },
   {
     "name": "Dunkin'",
     "region": "tulum",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
-    "valid": "July 30 2026",
-    "categorie": "Fast Food",
-    "service": "Delivery",
-    "promo": "Free Donut",
-    "conditions": [
-      "Enjoy a free donut with any beverage purchase.",
-      "Valid at participating Dunkin' locations.",
-      "Offer valid until December 31, 2025.",
-      "Cannot be combined with other promotions."
-    ],
+    "description": {
+      "en": "Coffee And Donut Chain Offering Fresh Brewed Coffee, Donuts, Breakfast Items, And Quick Service For On-The-Go Customers.",
+      "es": "Cadena De Café Y Donas Que Ofrece Café Recién Preparado, Donas, Artículos De Desayuno Y Servicio Rápido Para Clientes En Movimiento."
+    },
+    "valid": {
+      "en": "July 30 2026",
+      "es": "30 De Julio 2026"
+    },
+    "categorie": {
+      "en": "Fast Food",
+      "es": "Comida Rápida"
+    },
+    "service": {
+      "en": "Delivery",
+      "es": "Entrega A Domicilio"
+    },
+    "promo": {
+      "en": "1 Free Donut",
+      "es": "1 Dona Gratis"
+    },
+    "conditions": {
+      "en": [
+        "Enjoy A Free Donut With Any Beverage Purchase.",
+        "Valid At Participating Dunkin' Locations.",
+        "Offer Valid Until December 31, 2025.",
+        "Cannot Be Combined With Other Promotions."
+      ],
+      "es": [
+        "Disfruta Una Dona Gratis Con Cualquier Bebida.",
+        "Válido En Dunkin' Participantes.",
+        "Válido Hasta El 31 De Diciembre De 2025.",
+        "No Acumulable Con Otras Promociones."
+      ]
+    },
     "logo": "/assets/dunkin.png"
   },
   {
     "name": "Panera Bread",
     "region": "los cabos",
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas esse doloribus recusandae soluta est repudiandae perspiciatis excepturi sint quaerat maxime, voluptatum similique labore hic fuga quae, odit magni et consequuntur.",
-    "valid": "July 30 2026",
-    "categorie": "Fast Food",
-    "service": "Delivery",
-    "promo": "Free Pastry",
-    "conditions": [
-      "Get a free pastry with any order.",
-      "Valid at participating Panera Bread locations.",
-      "Offer valid until January 31, 2026.",
-      "Cannot be combined with other offers."
-    ],
+    "description": {
+      "en": "Bakery-Cafe Chain Serving Fresh Baked Goods, Soups, Salads, And Sandwiches With Clean Ingredients And Casual Dining Atmosphere.",
+      "es": "Cadena De Panadería-Café Que Sirve Productos Horneados Frescos, Sopas, Ensaladas Y Sándwiches Con Ingredientes Limpios Y Ambiente De Comida Casual."
+    },
+    "valid": {
+      "en": "July 30 2026",
+      "es": "30 De Julio 2026"
+    },
+    "categorie": {
+      "en": "Fast Food",
+      "es": "Comida Rápida"
+    },
+    "service": {
+      "en": "Delivery",
+      "es": "Entrega A Domicilio"
+    },
+    "promo": {
+      "en": "1 Free Pastry",
+      "es": "1 Pastelillo Gratis"
+    },
+    "conditions": {
+      "en": [
+        "Get A Free Pastry With Any Order.",
+        "Valid At Participating Panera Bread Locations.",
+        "Offer Valid Until January 31, 2026.",
+        "Cannot Be Combined With Other Offers."
+      ],
+      "es": [
+        "Obtén Un Pastelillo Gratis Con Cualquier Pedido.",
+        "Válido En Panera Bread Participantes.",
+        "Válido Hasta El 31 De Enero De 2026.",
+        "No Se Puede Combinar Con Otras Ofertas."
+      ]
+    },
     "logo": "/assets/panerabread.png"
   }
 ]

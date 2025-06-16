@@ -4,30 +4,51 @@
     "english": "Inglés"
   },
   "login": {
-    "title": "Iniciar sesión",
+    "title": "Encuentra tu Reserva",
+    "subtitle": "Por favor, ingresa tu correo electrónico y código de reservación.",
     "email": "Correo electrónico",
-    "password": "Contraseña",
-    "button": "Entrar"
+    "emailPlaceholder": "Ingresa tu Correo electrónico",
+    "reservationCodePlaceholder": "Ingresa tu código de reservación",
+    "buttonClose": "Cerrar",
+    "verifying": "Verificando...",
+    "confirm": "Confirmar"
   },
   "modal": {
-    "close": "Cerrar",
-    "confirm": "Confirmar"
+    "confirm": "Confirmar",
+    "cancel": "Cancelar",
+    "close": "Cerrar"
   },
   "coupon": {
     "title": "Cupón de descuento",
     "conditions": "Condiciones",
-    "validUntil": "Válido hasta",
+    "valid": "Válido hasta",
     "seeMore": "Ver más"
+  },
+  "wallet": {
+    "empty": "Tu billetera está vacía",
+    "addCoupon": "Agregar cupón"
+  },
+  "promotions": {
+    "title": "Promociones especiales",
+    "noPromos": "No hay promociones disponibles"
   },
   "landing": {
     "welcome": "Bienvenido a nuestra plataforma",
-    "subtitle": "Aprovecha los mejores descuentos"
+    "subtitle": "Obtén los mejores descuentos fácilmente"
   },
   "regionSelector": {
     "selectRegion": "Selecciona una región",
     "mexico": "México",
     "dominicanRepublic": "República Dominicana",
     "cancun": "Cancún",
+    "tulum": "Tulum",
+    "losCabos": "Los Cabos",
+    "puertoVallarta": "Puerto Vallarta",
     "puntaCana": "Punta Cana"
+  },
+  "userReservationChecker": {
+    "enterCode": "Ingresa tu código de reservación",
+    "enterEmail": "Ingresa tu correo electrónico",
+    "check": "Verificar reserva"
   }
 }

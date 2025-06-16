@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Login from "./Login";
+import { useTranslation } from "react-i18next";
 
 function Modal({
   logo,
@@ -29,6 +29,9 @@ function Modal({
 
   if (!visible) return null;
 
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
+
   return (
     <div
       onClick={onClose}
@@ -52,9 +55,9 @@ function Modal({
         <div className="flex h-[121px] items-center justify-between pt-4">
           <div className="flex flex-col gap-2">
             <p className="text-2xl leading-7 font-semibold tracking-wide text-[#024466]">
-              {name}
+              {name[lang]}
             </p>
-            <p className="text-base text-neutral-500">{categorie}</p>
+            <p className="text-base text-neutral-500">{categorie[lang]}</p>
           </div>
           <img className="md:w-[120px]" src={logo} alt="brand logo" />
         </div>
@@ -67,7 +70,7 @@ function Modal({
             </p>
             <div>
               <p className="text-xs font-medium tracking-wide text-neutral-500 md:text-base md:leading-9">
-                {description}
+                {description[lang]}
               </p>
             </div>
           </div>
