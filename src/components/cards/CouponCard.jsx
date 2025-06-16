@@ -40,7 +40,7 @@ function CouponCard({
   const getClipPath = (height) => {
     const clip70 = `polygon(
     0% 0%, 0% 33%, 3% 40%, 3% 60%, 0% 58.9%, 0% 100%,
-    100% 100%, 100% 58.9%, 97% 60%, 97% 36%, 100% 33.8%, 100% 0%
+    100% 100%, 100% 58.9%, 97% 60%, 97% 36%, 100% 33.2%, 100% 0%
   )`;
 
     const clip102 = `polygon(
@@ -135,8 +135,8 @@ function CouponCard({
           />
         </div>
         <div className="h-full border-l border-dashed border-gray-400" />
-        <div className="flex-1 pl-4 text-left text-sm font-medium">
-          <p className="text-[19px] leading-[150%] font-semibold text-[var(--color-primary)]">
+        <div className="flex-1 pl-4 text-left font-medium">
+          <p className="text-[19px] font-semibold text-[var(--color-primary)]">
             {breakAfterWords(promo[lang], 2)}
           </p>
           <p className="text-base font-normal text-[var(--color-primary)]">

@@ -43,9 +43,7 @@
     "puertoVallarta": "Puerto Vallarta",
     "puntaCana": "Punta Cana"
   },
-  "userReservationChecker": {
-    "enterCode": "Ingresa tu código de reservación",
-    "enterEmail": "Ingresa tu correo electrónico",
-    "check": "Verificar reserva"
+  "languageButton": {
+    "button": "Español"
   }
 }
