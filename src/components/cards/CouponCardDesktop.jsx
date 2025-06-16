@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-function CouponCardV3({
+function CouponCardDesktop({
   name,
   valid,
   promo,
@@ -117,4 +117,4 @@ function CouponCardV3({
   );
 }
 
-export default CouponCardV3;
+export default CouponCardDesktop;

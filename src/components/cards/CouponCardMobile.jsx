@@ -2,7 +2,7 @@
 import { useEffect, useState, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
-function CouponCard({
+function CouponCardMobile({
   name,
   validUntil,
   promo,
@@ -151,4 +151,4 @@ function CouponCard({
   );
 }
 
-export default CouponCard;
+export default CouponCardMobile;

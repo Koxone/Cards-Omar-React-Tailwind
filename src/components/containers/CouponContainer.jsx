@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import CouponCard from "../cards/CouponCard";
-import CouponCardV3 from "../cards/CouponCardV3";
+import CouponCardMobile from "../cards/CouponCardMobile";
+import CouponCardDesktop from "../cards/CouponCardDesktop";
 import PromotionsBanner from "../cards/PromotionsBanner";
 import RegionSelector from "../inputs/RegionSelector";
 import LanguageButton from "../buttons/LanguageButton";
@@ -28,7 +28,7 @@ function CouponContainer({ onClick, region, setRegion }) {
     <div className="flex max-w-[1280px] flex-col items-center justify-center gap-4 p-4">
       <div className="flex w-full flex-col items-center justify-between gap-3 md:flex-row md:gap-10">
         <PromotionsBanner />
-        <div className="md:grid md:grid-cols-[1fr_150px] grid grid-cols-[1fr_63px] w-full items-center justify-between gap-4">
+        <div className="grid w-full grid-cols-[1fr_63px] items-center justify-between gap-4 md:grid md:grid-cols-[1fr_150px]">
           <RegionSelector onChange={setRegion} />
           <LanguageButton />
         </div>
@@ -37,7 +37,7 @@ function CouponContainer({ onClick, region, setRegion }) {
       <div className="grid grid-cols-1 gap-x-4 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
         {isMobile
           ? filteredData.map((item, index) => (
-              <CouponCard
+              <CouponCardMobile
                 key={index}
                 promo={item.promo}
                 name={item.name}
@@ -52,7 +52,7 @@ function CouponContainer({ onClick, region, setRegion }) {
               />
             ))
           : filteredData.map((item, index) => (
-              <CouponCardV3
+              <CouponCardDesktop
                 key={index}
                 promo={item.promo}
                 name={item.name}
