@@ -1,0 +1,33 @@
+{
+  "language": {
+    "spanish": "Español",
+    "english": "Inglés"
+  },
+  "login": {
+    "title": "Iniciar sesión",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "button": "Entrar"
+  },
+  "modal": {
+    "close": "Cerrar",
+    "confirm": "Confirmar"
+  },
+  "coupon": {
+    "title": "Cupón de descuento",
+    "conditions": "Condiciones",
+    "validUntil": "Válido hasta",
+    "seeMore": "Ver más"
+  },
+  "landing": {
+    "welcome": "Bienvenido a nuestra plataforma",
+    "subtitle": "Aprovecha los mejores descuentos"
+  },
+  "regionSelector": {
+    "selectRegion": "Selecciona una región",
+    "mexico": "México",
+    "dominicanRepublic": "República Dominicana",
+    "cancun": "Cancún",
+    "puntaCana": "Punta Cana"
+  }
+}

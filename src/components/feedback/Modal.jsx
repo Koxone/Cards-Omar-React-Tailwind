@@ -43,7 +43,7 @@ function Modal({
         <div>
           <img
             className="rounded-2xl"
-            src="/public/assets/xcaret.jpg"
+            src="/assets/xcaret.jpg"
             alt="Brand Image"
           />
         </div>
