@@ -16,7 +16,8 @@
   "modal": {
     "confirm": "Confirmar",
     "cancel": "Cancelar",
-    "close": "Cerrar"
+    "close": "Cerrar",
+    "description": "Descripcion"
   },
   "couponMobile": {
     "valid": "Valido hasta "

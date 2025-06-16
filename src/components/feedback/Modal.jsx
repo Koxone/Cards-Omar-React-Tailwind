@@ -31,6 +31,7 @@ function Modal({
 
   const { i18n } = useTranslation();
   const lang = i18n.language;
+  const { t } = useTranslation();
 
   return (
     <div
@@ -66,7 +67,7 @@ function Modal({
         <div className="flex h-full flex-col">
           <div className="mb-auto flex flex-col gap-4">
             <p className="font-semibold tracking-wider md:text-2xl">
-              Description
+              {t("modal.description")}
             </p>
             <div>
               <p className="text-xs font-medium tracking-wide text-neutral-500 md:text-base md:leading-9">
