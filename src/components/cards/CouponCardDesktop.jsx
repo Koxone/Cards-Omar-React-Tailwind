@@ -42,7 +42,7 @@ function CouponCardDesktop({
 
       {/* Right semicircle border - positioned outside the clipped container */}
       <div
-        className="absolute -right-9 z-10 h-[41px] w-[50px]"
+        className="absolute -right-[37px] z-10 h-[41px] w-[50px]"
         style={{
           top: "calc(71.5% - 25px)",
         }}
@@ -57,19 +57,19 @@ function CouponCardDesktop({
 
       <div className="rounded-2xl">
         <div
-          className="relative grid grid-rows-[200px_50px_1fr] overflow-hidden rounded-2xl border border-[#297da9]"
+          className="relative pl-2 pr-2 grid grid-rows-[200px_50px_1fr] overflow-hidden rounded-2xl border border-[#297da9]"
           style={{
             clipPath: `polygon(
             0% 0%, 
             100% 0%, 
-            100% 64%, 
+            100% 64.3%, 
             calc(100% - 25px) 70%, 
             100% 70%, 
             100% 100%, 
             0% 100%, 
-            0% 70%, 
+            0% 70.0%, 
             25px 70%, 
-            0% 64%
+            0% 64.2%
           )`,
           }}
         >
