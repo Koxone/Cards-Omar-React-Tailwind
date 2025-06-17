@@ -12,7 +12,6 @@ function App() {
   const [showLogin, setShowLogin] = useState(false);
   const [region, setRegion] = useState("all");
   const [selectedItem, setSelectedItem] = useState(null);
-  const [language, setLanguage] = useState("en");
 
   useEffect(() => {
     const storedLogin = localStorage.getItem("isLoggedIn");

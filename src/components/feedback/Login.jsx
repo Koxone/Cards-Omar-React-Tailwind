@@ -31,6 +31,8 @@ function Login({ onClose, visible, onLoginSuccess }) {
       });
 
       if (data && data.status === "CONFIRMED") {
+        console.log("Datos completos de la reserva:", data);
+
         setToastSuccess(true);
         setToastVisible(true);
 

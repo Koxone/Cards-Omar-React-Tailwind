@@ -12,6 +12,7 @@ function CouponCardMobile({
   categorie,
   description,
   region,
+  id,
 }) {
   const [bgColor, setBgColor] = useState("");
   useEffect(() => {
@@ -120,6 +121,7 @@ function CouponCardMobile({
             validUntil,
             description,
             region,
+            id,
           })
         }
         ref={mainRef}
