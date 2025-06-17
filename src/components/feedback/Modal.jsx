@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useReservationContext } from "../../context/ReservationContext";
 
 function Modal({
   logo,
@@ -10,10 +11,12 @@ function Modal({
   onClose,
   visible,
   onApply,
-  isLoggedIn,
+  id,
 }) {
   const [bgColor, setBgColor] = useState("");
   const [isApplying, setIsApplying] = useState(false);
+
+  const { isLoggedIn, reservation, language } = useReservationContext();
 
   useEffect(() => {
     const color = window.getComputedStyle(document.body).backgroundColor;
@@ -90,18 +93,20 @@ function Modal({
             {/* Wallet Buttons */}
             <div className="flex w-full items-center justify-between pt-2 sm:justify-evenly">
               <button
+                id="apple"
                 onClick={() => {
-                  if (isLoggedIn) {
-                    // Wallet Logic
-                    console.log("Agregar a Apple Wallet");
-                  } else {
+                  if (!isLoggedIn) {
                     setIsApplying(true);
                     onApply();
+                    return;
                   }
+
+                  const uuid = reservation?.config?.uuid;
+                  const url = `http://api.sacbetransfers.com/api/v1/wallet/ios?uuid=${uuid}&language=${language}&code=${id}`;
+                  window.open(url, "_blank");
                 }}
               >
                 <img
-                  id="apple"
                   className="w-[130px] cursor-pointer md:h-[50px] md:w-[160px]"
                   src="/assets/apple.png"
                   alt="Apple Wallet"

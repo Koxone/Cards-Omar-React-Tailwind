@@ -45,6 +45,7 @@ function CouponContainer({ onClick, region, setRegion }) {
                 onClick={onClick}
                 description={item.description}
                 region={item.region}
+                id={item.id}
               />
             ))
           : filteredData.map((item, index) => (
@@ -60,6 +61,7 @@ function CouponContainer({ onClick, region, setRegion }) {
                 onClick={onClick}
                 description={item.description}
                 region={item.region}
+                id={item.id}
               />
             ))}
       </div>

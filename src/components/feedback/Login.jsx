@@ -1,17 +1,28 @@
 import React, { useEffect, useState } from "react";
-import { UserReservationChecker } from "../../logic/UserReservationChecker";
 import Toast from "./Toast";
 import { useTranslation } from "react-i18next";
+import { useReservationContext } from "../../context/ReservationContext";
 
-function Login({ onClose, visible, onLoginSuccess }) {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [email, setEmail] = useState("");
-  const [reservationCode, setReservationCode] = useState("");
+function Login({ onClose, visible }) {
   const [toastVisible, setToastVisible] = useState(false);
   const [toastSuccess, setToastSuccess] = useState(null);
+  const [loading, setLoading] = useState(false);
 
-  const { checkReservation, reservation, loading, error } =
-    UserReservationChecker();
+  const {
+    email,
+    setEmail,
+    reservationCode,
+    setReservationCode,
+    language,
+    login,
+  } = useReservationContext();
+
+  console.log("Contexto:", {
+    email,
+    reservationCode,
+    language,
+    login,
+  });
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -23,33 +34,24 @@ function Login({ onClose, visible, onLoginSuccess }) {
       return;
     }
 
+    setLoading(true);
     try {
-      const data = await checkReservation({
-        code: reservationCode,
-        email,
-        language: "en",
-      });
-
-      if (data && data.status === "CONFIRMED") {
-        console.log("Datos completos de la reserva:", data);
-
-        setToastSuccess(true);
-        setToastVisible(true);
-
-        setTimeout(() => {
-          setToastVisible(false);
-          onLoginSuccess();
-          onClose();
-        }, 2000);
-      } else {
-        setToastSuccess(false);
-        setToastVisible(true);
-        setTimeout(() => setToastVisible(false), 2000);
-      }
+      await login(email, reservationCode, language);
+      setToastSuccess(true);
+      setToastVisible(true);
+      setTimeout(() => {
+        setToastVisible(false);
+        onClose();
+      }, 2000);
     } catch (err) {
+      console.error("Error en login:", err);
       setToastSuccess(false);
       setToastVisible(true);
-      setTimeout(() => setToastVisible(false), 2000);
+      setTimeout(() => {
+        setToastVisible(false);
+      }, 2000);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -65,7 +67,7 @@ function Login({ onClose, visible, onLoginSuccess }) {
   useEffect(() => {
     if (toastSuccess !== null) {
       const timer = setTimeout(() => {
-        setToastSuccess(null); // Reset success/fail state
+        setToastSuccess(null);
       }, 2000);
       return () => clearTimeout(timer);
     }
@@ -97,8 +99,8 @@ function Login({ onClose, visible, onLoginSuccess }) {
                 value={email}
                 placeholder={t("login.emailPlaceholder")}
                 onChange={(e) => setEmail(e.target.value)}
-                className="h-12 w-full rounded-2xl border border-[#297da9] ps-[20px] pe-[44px] outline-none"
-                type="text"
+                className="h-12 w-full rounded-2xl border border-[#297da9] ps-[20px] pe-[28px] outline-none"
+                type="email"
               />
             </div>
             <div className="flex w-full flex-col gap-4">
@@ -112,6 +114,7 @@ function Login({ onClose, visible, onLoginSuccess }) {
               />
             </div>
           </div>
+
           {toastVisible && <Toast text={toastSuccess} />}
 
           <div className="mt-14 flex w-full items-center justify-center gap-4 sm:mt-11 md:justify-start">
@@ -122,11 +125,12 @@ function Login({ onClose, visible, onLoginSuccess }) {
             >
               {t("login.buttonClose")}
             </button>
+
             <button
               id="botonGPT"
               onClick={handleLogin}
               disabled={loading}
-              className={`flex items-center justify-center gap-2 rounded-[42px] border px-8 py-3 text-base font-semibold text-white shadow-2xl transition-all duration-500 ease-in-out ${toastSuccess === true ? "bg-green-800" : ""} ${toastSuccess === false ? "bg-red-800" : ""} ${toastSuccess === null && !loading ? "bg-[#297da9] hover:bg-[#004165] active:bg-[#004165]" : ""} ${loading ? "cursor-not-allowed bg-gray-400" : ""} `}
+              className={`flex items-center justify-center gap-2 rounded-[42px] border px-8 py-3 text-base font-semibold text-white shadow-2xl transition-all duration-500 ease-in-out ${toastSuccess === true ? "bg-green-800" : ""} ${toastSuccess === false ? "bg-red-800" : ""} ${toastSuccess === null && !loading ? "bg-[#297da9] hover:bg-[#004165] active:bg-[#004165]" : ""} ${loading ? "cursor-not-allowed bg-gray-400" : ""}`}
             >
               {loading ? (
                 <div role="status" className="flex items-center gap-2">

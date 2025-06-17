@@ -3,15 +3,17 @@ import Landing from "./pages/Landing";
 import data from "/data";
 import Modal from "./components/feedback/Modal";
 import { useEffect, useState } from "react";
+import { useReservationContext } from "./context/ReservationContext";
 import Login from "./components/feedback/Login";
 import Header from "./components/header/Header";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [region, setRegion] = useState("all");
   const [selectedItem, setSelectedItem] = useState(null);
+
+  const { isLoggedIn, setIsLoggedIn } = useReservationContext();
 
   useEffect(() => {
     const storedLogin = localStorage.getItem("isLoggedIn");
@@ -44,6 +46,7 @@ function App() {
           description={selectedItem.description}
           onApply={handleApplyCoupon}
           isLoggedIn={isLoggedIn}
+          id={selectedItem.id}
         />
       )}
       {showLogin && (

@@ -11,7 +11,6 @@ export function UserReservationChecker() {
       setError(null);
       setReservation(null);
 
-      
       try {
         const formData = new FormData();
         formData.append("code", code);

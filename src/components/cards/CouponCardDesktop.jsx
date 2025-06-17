@@ -11,6 +11,7 @@ function CouponCardDesktop({
   logo,
   onClick,
   region,
+  id,
 }) {
   const [bgColor, setBgColor] = useState("");
   useEffect(() => {
@@ -102,6 +103,7 @@ function CouponCardDesktop({
                   valid,
                   description,
                   region,
+                  id,
                 })
               }
               className="cursor-pointer rounded-[42px] border bg-[#297da9] px-12 py-4 text-base font-semibold text-white transition-colors duration-300 hover:bg-[#004165] active:bg-[#004165]"
