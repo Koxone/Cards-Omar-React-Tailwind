@@ -17,13 +17,6 @@ function Login({ onClose, visible }) {
     login,
   } = useReservationContext();
 
-  console.log("Contexto:", {
-    email,
-    reservationCode,
-    language,
-    login,
-  });
-
   const handleLogin = async (e) => {
     e.preventDefault();
 

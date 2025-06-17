@@ -45,7 +45,6 @@ function App() {
           validUntil={selectedItem.valid}
           description={selectedItem.description}
           onApply={handleApplyCoupon}
-          isLoggedIn={isLoggedIn}
           id={selectedItem.id}
         />
       )}
@@ -53,10 +52,6 @@ function App() {
         <Login
           visible={true}
           onClose={() => setShowLogin(false)}
-          onLoginSuccess={() => {
-            setIsLoggedIn(true);
-            localStorage.setItem("isLoggedIn", "true");
-          }}
         />
       )}
       <Header />
