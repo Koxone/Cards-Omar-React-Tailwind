@@ -86,7 +86,9 @@ function Modal({
             <p className="text-xs font-medium text-[#297da9] underline underline-offset-2 transition-colors duration-200 md:text-sm">
               Terms & Conditions with provider
             </p>
-            <div className="flex w-full items-center justify-between pt-2">
+
+            {/* Wallet Buttons */}
+            <div className="flex w-full items-center justify-between pt-2 sm:justify-evenly">
               <button
                 onClick={() => {
                   if (isLoggedIn) {

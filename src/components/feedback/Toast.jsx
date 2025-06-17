@@ -38,8 +38,7 @@ function Toast({ text }) {
 
   return (
     <div
-      className={`absolute bottom-26 left-1/2 w-fit -translate-x-[50%] md:static md:bottom-auto md:left-auto md:w-[120px] 
-        md:translate-x-0 ${toastStyles()} items-center gap-2 rounded-2xl bg-white p-1 shadow-lg transition-opacity duration-300 ${
+      className={`absolute bottom-26 left-1/2 w-fit -translate-x-[50%] sm:w-[87%] md:absolute md:bottom-26 md:left-auto md:translate-x-0 ${toastStyles()} items-center gap-2 rounded-2xl bg-white p-1 shadow-lg transition-opacity duration-300 ${
         text === true || text === false
           ? "flex opacity-100"
           : "hidden opacity-0"
