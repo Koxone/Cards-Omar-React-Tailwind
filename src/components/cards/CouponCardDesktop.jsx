@@ -23,7 +23,7 @@ function CouponCardDesktop({
   const { t } = useTranslation();
 
   return (
-    <div className="relative">
+    <div className="relative max-h-[353px] max-w-[345px]">
       {/* Left semicircle border - positioned outside the clipped container */}
       <div
         className="absolute -left-3 z-10 h-[41px] w-[50px]"
@@ -41,7 +41,7 @@ function CouponCardDesktop({
 
       {/* Right semicircle border - positioned outside the clipped container */}
       <div
-        className="absolute -right-[2.34rem] z-10 h-[41px] w-[50px]"
+        className="absolute -right-9 z-10 h-[41px] w-[50px]"
         style={{
           top: "calc(71.5% - 25px)",
         }}
@@ -54,7 +54,7 @@ function CouponCardDesktop({
         />
       </div>
 
-      <div className="max-h-[353px] max-w-[345px] rounded-2xl">
+      <div className="rounded-2xl">
         <div
           className="relative grid grid-rows-[200px_50px_1fr] overflow-hidden rounded-2xl border border-[#297da9]"
           style={{
@@ -87,9 +87,7 @@ function CouponCardDesktop({
           </div>
 
           <div className="flex flex-row items-center bg-[#f9f9f9]">
-            {/* <div className="h-[28px] w-[14px] rounded-tl-[0px] rounded-tr-[14px] rounded-br-[14px] rounded-bl-[0px] border-r-1 border-[#297da9] bg-[#f9f9f9]"></div> */}
             <div className="h-[1px] w-full border-b border-dashed border-b-neutral-400"></div>
-            {/* <div className="h-[28px] w-[14px] rounded-tl-[14px] rounded-tr-[0px] rounded-br-[0px] rounded-bl-[14px] border-l-1 border-[#297da9] bg-[#f9f9f9]"></div> */}
           </div>
 
           <div className="flex w-full items-center justify-center p-4 pt-3">

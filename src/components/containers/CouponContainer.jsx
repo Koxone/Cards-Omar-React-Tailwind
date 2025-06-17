@@ -24,13 +24,13 @@ function CouponContainer({ onClick, region, setRegion }) {
       : data;
 
   return (
-    <div className="flex max-w-[1280px] flex-col items-center justify-center gap-4 p-4">
+    <div className="flex max-w-[1280px] flex-col justify-center gap-4 p-4 sm:items-start">
       <div className="flex w-full flex-col items-center justify-between gap-3 md:flex-row md:gap-10">
         <PromotionsBanner />
         <RegionSelector onChange={setRegion} />
       </div>
 
-      <div className="grid gap-x-4 gap-y-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid w-full items-center justify-center gap-x-4 gap-y-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
         {isMobile
           ? filteredData.map((item, index) => (
               <CouponCardMobile
