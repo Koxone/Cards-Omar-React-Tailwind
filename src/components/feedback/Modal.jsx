@@ -24,10 +24,13 @@ function Modal({
   });
 
   useEffect(() => {
-    if (visible) document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = "";
-    };
+    if (visible) {
+      const scrollY = window.scrollY;
+      const scrollX = window.scrollX;
+      setTimeout(() => {
+        window.scrollTo(scrollX, scrollY);
+      }, 0);
+    }
   }, [visible]);
 
   if (!visible) return null;
@@ -45,7 +48,7 @@ function Modal({
       <div
         onClick={(e) => e.stopPropagation()}
         style={{ backgroundColor: bgColor }}
-        className="absolute top-1/2 left-1/2 z-20 flex h-[calc(100vh-140px)] w-[calc(100%-40px)] -translate-x-1/2 -translate-y-1/2 transform flex-col gap-6 rounded-2xl border border-[#297da9] p-8 shadow-2xl sm:h-[756px] sm:w-[644px]"
+        className="fixed top-1/2 left-1/2 z-20 flex h-[calc(100vh-140px)] w-[calc(100%-40px)] -translate-x-1/2 -translate-y-1/2 transform flex-col gap-6 rounded-2xl border border-[#297da9] p-8 shadow-2xl sm:h-[750px] sm:w-[550px]"
       >
         <button
           onClick={onClose}
