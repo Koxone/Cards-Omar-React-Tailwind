@@ -3,7 +3,6 @@ import CouponCardMobile from "../cards/CouponCardMobile";
 import CouponCardDesktop from "../cards/CouponCardDesktop";
 import PromotionsBanner from "../cards/PromotionsBanner";
 import RegionSelector from "../inputs/RegionSelector";
-import LanguageButton from "../buttons/LanguageButton";
 import data from "/data";
 
 function CouponContainer({ onClick, region, setRegion }) {
@@ -28,10 +27,7 @@ function CouponContainer({ onClick, region, setRegion }) {
     <div className="flex max-w-[1280px] flex-col items-center justify-center gap-4 p-4">
       <div className="flex w-full flex-col items-center justify-between gap-3 md:flex-row md:gap-10">
         <PromotionsBanner />
-        <div className="grid w-full grid-cols-[1fr_63px] items-center justify-between gap-4 md:grid md:grid-cols-[1fr_150px]">
-          <RegionSelector onChange={setRegion} />
-          <LanguageButton />
-        </div>
+        <RegionSelector onChange={setRegion} />
       </div>
 
       <div className="grid grid-cols-1 gap-x-4 gap-y-4 md:grid-cols-2 lg:grid-cols-3">

@@ -34,19 +34,26 @@ function Modal({
   const { t } = useTranslation();
 
   return (
-    <div
-      onClick={onClose}
-      className="fixed top-0 left-0 z-50 flex h-screen w-screen items-center justify-center bg-black/50"
-    >
+    <div className="">
+      <div
+        onClick={onClose}
+        className="fixed top-0 left-0 z-10 flex h-screen w-screen items-center justify-center bg-black/50"
+      />
       <div
         onClick={(e) => e.stopPropagation()}
         style={{ backgroundColor: bgColor }}
-        className="absolute top-1/2 left-1/2 z-10 flex h-[calc(100vh-140px)] w-full -translate-x-1/2 -translate-y-1/2 transform flex-col gap-6 rounded-2xl border border-[#297da9] p-8 shadow-2xl sm:h-[756px] sm:w-[644px]"
+        className="absolute top-1/2 left-1/2 z-20 flex h-[calc(100vh-140px)] w-[calc(100%-40px)] -translate-x-1/2 -translate-y-1/2 transform flex-col gap-6 rounded-2xl border border-[#297da9] p-8 shadow-2xl sm:h-[756px] sm:w-[644px]"
       >
+        <button
+          onClick={onClose}
+          className="absolute top-2 right-2 z-50 w-5.5 cursor-pointer text-neutral-500"
+        >
+          X
+        </button>
         {/* Banner Image */}
         <div>
           <img
-            className="rounded-2xl"
+            className="rounded-[5px]"
             src="/assets/xcaret.jpg"
             alt="Brand Image"
           />
@@ -56,7 +63,7 @@ function Modal({
         <div className="flex h-[121px] items-center justify-between pt-4">
           <div className="flex flex-col gap-2">
             <p className="text-2xl leading-7 font-semibold tracking-wide text-[#024466]">
-              {name[lang]}
+              {name}
             </p>
             <p className="text-base text-neutral-500">{categorie[lang]}</p>
           </div>
@@ -70,19 +77,16 @@ function Modal({
               {t("modal.description")}
             </p>
             <div>
-              <p className="text-xs font-medium tracking-wide text-neutral-500 md:text-base md:leading-9">
+              <p className="text-[11pt] font-medium tracking-wide text-neutral-500 md:text-base md:leading-9">
                 {description[lang]}
               </p>
             </div>
           </div>
           <div className="flex flex-col items-center gap-4">
-            <a
-              className="text-xs font-medium text-[#297da9] underline underline-offset-2 transition-colors duration-200 hover:text-[#004165] md:text-sm"
-              href="#"
-            >
-              Terms & Conditions
-            </a>
-            <div className="flex w-full items-center justify-between px-4 pt-2">
+            <p className="text-xs font-medium text-[#297da9] underline underline-offset-2 transition-colors duration-200 md:text-sm">
+              Terms & Conditions with provider
+            </p>
+            <div className="flex w-full items-center justify-between pt-2">
               <button
                 onClick={() => {
                   if (isLoggedIn) {

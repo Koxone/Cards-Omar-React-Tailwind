@@ -4,6 +4,7 @@ import data from "/data";
 import Modal from "./components/feedback/Modal";
 import { useEffect, useState } from "react";
 import Login from "./components/feedback/Login";
+import Header from "./components/header/Header";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -11,6 +12,7 @@ function App() {
   const [showLogin, setShowLogin] = useState(false);
   const [region, setRegion] = useState("all");
   const [selectedItem, setSelectedItem] = useState(null);
+  const [language, setLanguage] = useState("en");
 
   useEffect(() => {
     const storedLogin = localStorage.getItem("isLoggedIn");
@@ -20,7 +22,6 @@ function App() {
   }, []);
 
   const handleClick = (clickedItem) => {
-    console.log("Clicked item:", clickedItem);
     setSelectedItem(clickedItem);
     setShowModal(true);
   };
@@ -56,6 +57,7 @@ function App() {
           }}
         />
       )}
+      <Header />
       <div className="container">
         <Landing onClick={handleClick} region={region} setRegion={setRegion} />
       </div>

@@ -68,7 +68,7 @@ function Login({ onClose, visible, onLoginSuccess }) {
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className="absolute z-50 flex flex-col items-center justify-center gap-4 rounded-2xl border border-[#297da9] bg-white p-9"
+          className="absolute z-50 flex w-[calc(100%-40px)] flex-col items-center justify-center gap-4 rounded-2xl border border-[#297da9] bg-white p-9"
         >
           <div className="flex w-full flex-col gap-1.5">
             <h2 className="text-left text-2xl leading-[1.2] font-bold">
@@ -97,7 +97,7 @@ function Login({ onClose, visible, onLoginSuccess }) {
                 value={reservationCode}
                 onChange={(e) => setReservationCode(e.target.value)}
                 type="text"
-                className="h-12 w-full rounded-2xl border border-[#297da9] ps-[20px] pe-[44px] outline-none"
+                className="h-12 w-full rounded-2xl border border-[#297da9] ps-[20px] pe-[30px] outline-none"
               />
             </div>
           </div>

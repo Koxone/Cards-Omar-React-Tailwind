@@ -1,6 +1,7 @@
 [
   {
     "name": "McDonald's",
+    "id": "1000",
     "region": "punta cana",
     "description": {
       "en": "Fast Food Restaurant Chain Serving Burgers, Fries, And Various Menu Items With Quick Service And Convenient Locations Worldwide.",
@@ -40,6 +41,7 @@
   },
   {
     "name": "Starbucks",
+    "id": "1001",
     "region": "los cabos",
     "description": {
       "en": "Premium Coffee Chain Offering Specialty Drinks, Fresh Pastries, And A Cozy Atmosphere For Coffee Lovers And Professionals.",
@@ -79,6 +81,7 @@
   },
   {
     "name": "KFC",
+    "id": "1002",
     "region": "puerto vallarta",
     "description": {
       "en": "Famous Fried Chicken Restaurant Known For Its Secret Recipe Of 11 Herbs And Spices, Offering Family Meals And Quick Service.",
@@ -118,6 +121,7 @@
   },
   {
     "name": "Uber",
+    "id": "1003",
     "region": "tulum",
     "description": {
       "en": "Ride-Sharing And Delivery Service Providing Convenient Transportation And Food Delivery Options Through A Mobile App Platform.",
@@ -157,6 +161,7 @@
   },
   {
     "name": "Domino's",
+    "id": "1004",
     "region": "cancun",
     "description": {
       "en": "Pizza Delivery Chain Specializing In Fresh Made-To-Order Pizzas With Fast Delivery Service And Online Ordering Convenience.",
@@ -196,6 +201,7 @@
   },
   {
     "name": "Subway",
+    "id": "1005",
     "region": "los cabos",
     "description": {
       "en": "Submarine Sandwich Chain Offering Fresh Ingredients, Customizable Subs, And Healthy Fast Food Options With Made-To-Order Service.",
@@ -235,6 +241,7 @@
   },
   {
     "name": "Pizza Hut",
+    "id": "1006",
     "region": "puerto vallarta",
     "description": {
       "en": "International Pizza Restaurant Chain Known For Pan Pizza, Thin Crust Options, And Family-Friendly Dining Experience With Delivery Service.",
@@ -274,6 +281,7 @@
   },
   {
     "name": "Taco Bell",
+    "id": "1007",
     "region": "punta cana",
     "description": {
       "en": "Mexican-Inspired Fast Food Chain Serving Tacos, Burritos, And Innovative Menu Items With Bold Flavors And Quick Service.",
@@ -313,6 +321,7 @@
   },
   {
     "name": "Wendy's",
+    "id": "1008",
     "region": "tulum",
     "description": {
       "en": "Fresh Burger Restaurant Chain Known For Square Patties, Frosty Desserts, And Quality Ingredients With Fast Casual Dining Experience.",
@@ -352,6 +361,7 @@
   },
   {
     "name": "Chick-fil-A",
+    "id": "1009",
     "region": "cancun",
     "description": {
       "en": "Chicken Restaurant Chain Specializing In Breaded Chicken Sandwiches, Nuggets, And Exceptional Customer Service With Quality Ingredients.",
@@ -391,6 +401,7 @@
   },
   {
     "name": "Dunkin'",
+    "id": "1010",
     "region": "tulum",
     "description": {
       "en": "Coffee And Donut Chain Offering Fresh Brewed Coffee, Donuts, Breakfast Items, And Quick Service For On-The-Go Customers.",
@@ -430,6 +441,7 @@
   },
   {
     "name": "Panera Bread",
+    "id": "1011",
     "region": "los cabos",
     "description": {
       "en": "Bakery-Cafe Chain Serving Fresh Baked Goods, Soups, Salads, And Sandwiches With Clean Ingredients And Casual Dining Atmosphere.",
