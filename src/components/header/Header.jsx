@@ -11,7 +11,7 @@ function Header() {
       <img
         onClick={scrollToTop}
         className="w-[90px] cursor-pointer object-contain"
-        src="/public/assets/Recurso 2.svg"
+        src="/public/assets/sacbe.svg"
         alt="brand logo"
       />
       <div className="flex h-fit items-center gap-2">
