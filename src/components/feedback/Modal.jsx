@@ -107,8 +107,8 @@ function Modal({
                 }}
               >
                 <img
-                  className="w-[130px] cursor-pointer md:h-[50px] md:w-[160px]"
-                  src="/assets/apple.png"
+                  className="w-[130px cursor-pointer md:h-[50px] md:w-[160px]"
+                  src="/assets/apple.svg"
                   alt="Apple Wallet"
                 />
               </button>
@@ -127,7 +127,7 @@ function Modal({
               >
                 <img
                   className="h-[42px] w-[130px] cursor-pointer md:h-[50px] md:w-[160px]"
-                  src="/assets/google.png"
+                  src="/assets/google.svg"
                   alt="Google Wallet"
                 />
               </button>
