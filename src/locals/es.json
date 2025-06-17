@@ -6,8 +6,8 @@
   "login": {
     "title": "Encuentra tu Reserva",
     "subtitle": "Por favor, ingresa tu correo electrónico y código de reservación.",
-    "email": "Correo electrónico",
-    "emailPlaceholder": "Ingresa tu Correo electrónico",
+    "email": "Correo Electrónico",
+    "emailPlaceholder": "Ingresa tu Correo Electrónico",
     "reservationCodePlaceholder": "Ingresa tu código de reservación",
     "buttonClose": "Cerrar",
     "verifying": "Verificando...",
