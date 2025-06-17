@@ -6,11 +6,11 @@ import RegionSelector from "../inputs/RegionSelector";
 import data from "/data";
 
 function CouponContainer({ onClick, region, setRegion }) {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 408);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 408);
     };
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
@@ -30,7 +30,7 @@ function CouponContainer({ onClick, region, setRegion }) {
         <RegionSelector onChange={setRegion} />
       </div>
 
-      <div className="grid grid-cols-1 gap-x-4 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-x-4 gap-y-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
         {isMobile
           ? filteredData.map((item, index) => (
               <CouponCardMobile
