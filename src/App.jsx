@@ -32,7 +32,7 @@ function App() {
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="mb-[50px] flex justify-center">
       <main className="flex justify-center">
         {showModal && selectedItem && !showLogin && (
           <Modal
