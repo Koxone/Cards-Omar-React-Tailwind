@@ -93,7 +93,7 @@ function Modal({
             <p className="font-bold tracking-wider md:text-[11pt]">
               {t("modal.description")}
             </p>
-            <p className="text-[11pt] font-medium text-neutral-500 md:text-base md:leading-[1.5]">
+            <p className="mb-3 text-[11pt] font-medium text-neutral-500 md:text-base md:leading-[1.5]">
               {description[lang]}
             </p>
             <p className="self-center text-xs font-medium text-black md:text-sm">
