@@ -74,8 +74,14 @@ function Login({ onClose, visible }) {
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className="absolute z-50 flex w-[calc(100%-40px)] flex-col items-center justify-center gap-4 rounded-2xl border border-[#297da9] bg-white p-9 sm:w-[644px]"
+          className="absolute z-50 flex w-[calc(100%-40px)] flex-col items-center justify-center gap-4 rounded-2xl border border-[#297da9] bg-white p-9 sm:max-w-[500px]"
         >
+          <button
+            onClick={onClose}
+            className="absolute top-2 right-2 z-50 flex h-5.5 w-5.5 cursor-pointer items-center justify-center rounded-[4px] border-transparent bg-black/80 text-white hover:bg-[#297da9]"
+          >
+            X
+          </button>
           <div className="flex w-full flex-col gap-1.5">
             <h2 className="text-left text-2xl leading-[1.2] font-bold">
               {t("login.title")}
