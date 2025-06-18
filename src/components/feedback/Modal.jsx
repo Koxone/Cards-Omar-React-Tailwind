@@ -56,8 +56,7 @@ function Modal({
       <div
         onClick={(e) => e.stopPropagation()}
         style={{ backgroundColor: bgColor }}
-        className={`fixed top-1/2 left-1/2 z-20 flex w-[calc(100%-40px)] -translate-x-1/2 -translate-y-1/2 transform flex-col gap-5 rounded-2xl border border-[#297da9] p-8 shadow-2xl 
-          transition-all duration-300 ease-in-out sm:max-w-[500px] ${isAnimating ? "scale-100 opacity-100" : "scale-0 opacity-0"} `}
+        className={`fixed top-1/2 left-1/2 z-20 flex w-[calc(100%-40px)] -translate-x-1/2 -translate-y-1/2 transform flex-col gap-5 rounded-2xl border border-[#297da9] p-8 shadow-2xl transition-all duration-300 ease-in-out sm:max-w-[500px] ${isAnimating ? "scale-100 opacity-100" : "scale-0 opacity-0"} `}
       >
         <button
           onClick={onClose}
@@ -105,26 +104,34 @@ function Modal({
           <div className="flex flex-col items-center">
             {/* Wallet Buttons */}
             <div className="flex w-full items-center justify-between sm:justify-evenly">
-              <button
-                id="apple"
-                onClick={() => {
-                  if (!isLoggedIn) {
+              {isLoggedIn ? (
+                <a
+                  id="apple"
+                  href={`https://api.sacbetransfers.com/api/v1/wallet/ios?uuid=${reservation?.config?.uuid}&language=${language}&code=${id}`}
+                >
+                  <img
+                    className="cursor-pointer md:h-[50px] md:w-[160px]"
+                    src="/assets/apple.svg"
+                    alt="Apple Wallet"
+                  />
+                </a>
+              ) : (
+                <a
+                  id="apple"
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
                     setIsApplying(true);
                     onApply();
-                    return;
-                  }
-
-                  const uuid = reservation?.config?.uuid;
-                  const url = `http://api.sacbetransfers.com/api/v1/wallet/ios?uuid=${uuid}&language=${language}&code=${id}`;
-                  window.open(url, "_blank");
-                }}
-              >
-                <img
-                  className="cursor-pointer md:h-[50px] md:w-[160px]"
-                  src="/assets/apple.svg"
-                  alt="Apple Wallet"
-                />
-              </button>
+                  }}
+                >
+                  <img
+                    className="cursor-pointer md:h-[50px] md:w-[160px]"
+                    src="/assets/apple.svg"
+                    alt="Apple Wallet"
+                  />
+                </a>
+              )}
 
               <button
                 id="google"
