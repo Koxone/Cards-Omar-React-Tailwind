@@ -5,6 +5,7 @@ import WhatsappButton from "../buttons/WhatsappButton";
 function Header() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+    
   };
   return (
     <div className="flex h-[72px] w-screen items-center justify-between bg-[#16161d] p-4 text-white md:px-8">
