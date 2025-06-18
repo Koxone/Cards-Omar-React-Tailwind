@@ -14,9 +14,15 @@ function Modal({
   id,
 }) {
   const [bgColor, setBgColor] = useState("");
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
+  const [isRendered, setIsRendered] = useState(false);
   const [isApplying, setIsApplying] = useState(false);
 
   const { isLoggedIn, reservation, language } = useReservationContext();
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
+  const { t } = useTranslation();
 
   useEffect(() => {
     const color = window.getComputedStyle(document.body).backgroundColor;
@@ -25,19 +31,20 @@ function Modal({
 
   useEffect(() => {
     if (visible) {
-      const scrollY = window.scrollY;
-      const scrollX = window.scrollX;
+      setIsRendered(true);
+      setTimeout(() => setIsAnimating(true), 10);
+    } else if (!visible && isRendered) {
+      setIsAnimating(false);
+      setIsClosing(true);
       setTimeout(() => {
-        window.scrollTo(scrollX, scrollY);
-      }, 0);
+        setIsRendered(false);
+        setIsClosing(false);
+        onClose();
+      }, 1000); // duración de la animación
     }
   }, [visible]);
 
-  if (!visible) return null;
-
-  const { i18n } = useTranslation();
-  const lang = i18n.language;
-  const { t } = useTranslation();
+  if (!isRendered) return null;
 
   return (
     <div className="">
@@ -48,11 +55,11 @@ function Modal({
       <div
         onClick={(e) => e.stopPropagation()}
         style={{ backgroundColor: bgColor }}
-        className="fixed top-1/2 left-1/2 z-20 flex w-[calc(100%-40px)] -translate-x-1/2 -translate-y-1/2 transform flex-col gap-6 rounded-2xl border border-[#297da9] p-8 shadow-2xl sm:w-[550px]"
+        className={`fixed top-1/2 left-1/2 z-20 flex w-[calc(100%-40px)] -translate-x-1/2 -translate-y-1/2 transform flex-col gap-6 rounded-2xl border border-[#297da9] p-8 shadow-2xl transition-all duration-300 ease-in-out sm:w-[550px] ${isAnimating ? "scale-100 opacity-100" : "scale-0 opacity-0"} `}
       >
         <button
           onClick={onClose}
-          className="absolute top-2 right-2 z-50 w-5.5 cursor-pointer text-neutral-500"
+          className="absolute top-2 right-2 z-50 flex h-5.5 w-5.5 cursor-pointer items-center justify-center rounded-[4px] border-transparent bg-black/80 text-white hover:bg-[#297da9]"
         >
           X
         </button>
