@@ -24,7 +24,7 @@ function CouponCardDesktop({
   const { t } = useTranslation();
 
   return (
-    <div className="relative max-h-[353px] max-w-[345px]">
+    <div className="relative h-full max-w-[345px]">
       {/* Left semicircle border - positioned outside the clipped container */}
       <div
         className="absolute -left-3 z-10 h-[41px] w-[50px]"
@@ -57,7 +57,7 @@ function CouponCardDesktop({
 
       <div className="rounded-2xl">
         <div
-          className="relative pl-2 pr-2 grid grid-rows-[200px_50px_1fr] overflow-hidden rounded-2xl border border-[#297da9]"
+          className="relative grid grid-rows-[200px_50px_1fr] overflow-hidden rounded-2xl border border-[#297da9]"
           style={{
             clipPath: `polygon(
             0% 0%, 
@@ -73,11 +73,11 @@ function CouponCardDesktop({
           )`,
           }}
         >
-          <div className="flex flex-col items-center justify-center p-4 text-center">
+          <div className="flex flex-col items-center justify-center gap-2 p-4 text-center">
             <img
-              className="mb-auto max-h-[80px] min-h-[60px] max-w-[80px] min-w-[60px] object-contain"
+              className="mb- max-h-[80px] min-h-[60px] max-w-[80px] min-w-[60px] object-contain"
               src={logo}
-              alt=""
+              alt="logo icon"
             />
             <h2 className="text-2xl leading-tight font-bold tracking-widest break-words text-[#297da9] uppercase">
               {promo[lang]}

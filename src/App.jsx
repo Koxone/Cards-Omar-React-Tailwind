@@ -1,11 +1,10 @@
 import "./index.css";
-import Landing from "./pages/Landing";
 import data from "/data";
 import Modal from "./components/feedback/Modal";
 import { useEffect, useState } from "react";
 import { useReservationContext } from "./context/ReservationContext";
 import Login from "./components/feedback/Login";
-import Header from "./components/header/Header";
+import CouponContainer from "./components/containers/CouponContainer";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -33,32 +32,34 @@ function App() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start">
-      {showModal && selectedItem && !showLogin && (
-        <Modal
-          visible={true}
-          onClose={() => setShowModal(false)}
-          logo={selectedItem.logo}
-          name={selectedItem.name}
-          categorie={selectedItem.categorie}
-          details={selectedItem.details}
-          validUntil={selectedItem.valid}
-          description={selectedItem.description}
-          onApply={handleApplyCoupon}
-          id={selectedItem.id}
-        />
-      )}
-      {showLogin && (
-        <Login
-          visible={true}
-          onClose={() => setShowLogin(false)}
-        />
-      )}
-      <Header />
-      <div className="container">
-        <Landing onClick={handleClick} region={region} setRegion={setRegion} />
-      </div>
-    </main>
+    <div className="flex justify-center">
+      <main className="flex justify-center">
+        {showModal && selectedItem && !showLogin && (
+          <Modal
+            visible={true}
+            onClose={() => setShowModal(false)}
+            logo={selectedItem.logo}
+            name={selectedItem.name}
+            categorie={selectedItem.categorie}
+            details={selectedItem.details}
+            validUntil={selectedItem.valid}
+            description={selectedItem.description}
+            onApply={handleApplyCoupon}
+            id={selectedItem.id}
+          />
+        )}
+        {showLogin && (
+          <Login visible={true} onClose={() => setShowLogin(false)} />
+        )}
+        <div className="container">
+          <CouponContainer
+            region={region}
+            setRegion={setRegion}
+            onClick={handleClick}
+          />
+        </div>
+      </main>
+    </div>
   );
 }
 

@@ -8,7 +8,7 @@ function Header() {
     
   };
   return (
-    <div className="flex h-[72px] w-screen items-center justify-between bg-[#16161d] p-4 text-white md:px-8">
+    <div className="flex h-[72px] w-full items-center justify-between bg-[#16161d] p-4 text-white md:px-8">
       <img
         onClick={scrollToTop}
         className="w-[90px] cursor-pointer object-contain"
