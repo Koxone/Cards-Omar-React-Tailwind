@@ -89,7 +89,7 @@ function Modal({
 
         {/* Description and Apply Button */}
         <div className="flex flex-col gap-5">
-          <div className="mb-auto flex flex-col gap-4">
+          <div className="mb-auto flex flex-col gap-1">
             <p className="font-bold tracking-wider md:text-[11pt]">
               {t("modal.description")}
             </p>
