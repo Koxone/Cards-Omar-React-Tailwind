@@ -11,7 +11,7 @@
 Before showing available coupons, the platform verifies user eligibility by sending the **email** and **reservation code** to the following endpoint:
 
 ```
-https://api.sacbetransfers.com/api/v1/reservation/get
+https://api.xxxx.com/api/v1/reservation/get
 ```
 
 This ensures coupons are only accessible to users with valid bookings through **Sacbe Transfers**. The check is performed via a simple POST request and is handled securely through the frontend using `fetch`.
